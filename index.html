@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -26,18 +26,13 @@
             background-color: rgb(220, 38, 38) !important;
         }
         
-        .thumbnail {
-          filter:brightness(0.4);
-        }
-
-        .active,
-        .thumbnail:hover {
+        .thumbSwiper .swiper-slide-thumb-active {
           filter:brightness(1);
         }
       </style>
   </head>
 
-  <body>
+  <body id="body" class="z-0">
     <!-- Start:Header -->
     <section class="relative shadow-md items-center justify-between">
       <!-- Start:Navbar -->
@@ -45,16 +40,16 @@
         <nav class="w-full bg-gradient-to-b from-white to-transparent h-32 pt-3" data-aos="zoom-out">
           <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
             <a href="#" class="flex items-center">
-                <img src="./assets/illustrations/Logo-main.svg" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
+                <img src="./assets/logo/logo-main-navbar.svg" class="h-6 sm:h-10" alt="Flowbite Logo" />
             </a>
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-              <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 bg-white md:bg-transparent">
+              <ul class="flex flex-col md:flex-row md:space-x-8 bg-white md:bg-transparent md:py-0 py-5">
                 <li>
-                  <a href="#" class="block md:bg-transparent text-red-600 border-b-2 border-red-600 w-fit mx-3" aria-current="page">Home</a>
+                  <a href="#" class="block md:bg-transparent md:p-0 pl-3 pr-4 text-red-600 md:border-b-2 md:border-red-600 w-fit" aria-current="page">Home</a>
                 </li>
                 <li class="group">
                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full px-3 text-gray-700  md:hover:text-red-600 md:p-0">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1" id="dropdownChevron"></button>
@@ -99,6 +94,61 @@
           </div>
         </nav>
       </div>
+      <!-- <nav class="hidden fixed w-full bg-white to-transparent py-3 z-50 shadow-lg transition ease-in-out" id="whiteNav">
+        <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
+          <a href="#" class="flex items-center">
+              <img src="./assets/logo/logo-main-navbar.svg" class="h-6 sm:h-10" alt="Flowbite Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 bg-white md:bg-transparent">
+              <li>
+                <a href="#" class="block md:bg-transparent text-red-600 border-b-2 border-red-600 w-fit" aria-current="page">Home</a>
+              </li>
+              <li class="group">
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full px-3 text-gray-700  md:hover:text-red-600 md:p-0">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1" id="dropdownChevron"></button> 
+                  <div id="dropdownNavbar" class="absolute hidden bg-white divide-y top-8 shadow w-fit">
+                      <ul class="text-gray-700" aria-labelledby="dropdownLargeButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. High Tech Anchillaries Indonesia</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Arai Rubber Seal Indonesia</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Tri Tech Anchillaries Indonesia</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Dino Custom Mixing</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Raja Medika Utama</a>
+                        </li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Products</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Our Technology</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">News</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Career</a>
+              </li>
+              <li>
+                <a href="#" class="px-6 py-2 bg-red-600 text-white hover:bg-red-700">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
       <!-- End:Navbar -->
 
       <!-- Start:Banner -->
@@ -108,11 +158,11 @@
           <div class="absolute inset-x-1 inset-y-0 grid grid-cols-3 px-3 md:px-32 items-center">
             <div class="col-span-2 flex flex-col">
               <div class="text-xl md:text-8xl text-white font-semibold">HTA INDONESIA GROUP</div>
-              <div class="text-sm md:text-2xl text-white mb-10">Lorem ipsum is simply dummy text of the printing and typesetting industry</div>
+              <div class="text-sm md:text-2xl text-slate-50 mb-3 md:mb-10">Lorem ipsum is simply dummy text of the printing and typesetting industry</div>
               <div class="flex gap-2 md:gap-6">
-                <img src="./assets/icons/icon-iso.svg" class="h-10 md:h-32 text-white"/>
-                <img src="./assets/icons/icon-sgs.svg" class="h-10 md:h-32 mr-8 md:mr-24"/>
-                <img src="./assets/icons/icon-jis.svg" class="h-10 md:h-32"/>
+                <img src="./assets/icons/icon-iso.svg" class="h-7 md:h-32 text-white"/>
+                <img src="./assets/icons/icon-sgs.svg" class="h-7 md:h-32 mr-5 md:mr-24"/>
+                <img src="./assets/icons/icon-jis.svg" class="h-7 md:h-32"/>
               </div>  
             </div>
             <img src="./assets/illustrations/illustration-banner-product.png" alt="" class="col-span-1 w-full"/>
@@ -135,7 +185,7 @@
           
         </div>
       </div>
-      <div class="col-span-1 md:col-span-4 w-full swiper">
+      <div class="col-span-1 md:col-span-4 w-full swiper popularSwiper">
           <div class="flex w-full swiper-wrapper py-3 md:py-10 -ml-24 md:-ml-[450px]">
             <a href="" class="flex flex-col items-center justify-around group text-center swiper-slide overflow-hidden">
               <div class="h-32 w-32 md:h-72 md:w-72 overflow-hidden p-3 md:p-8">
@@ -168,24 +218,24 @@
               <div class="md:text-2xl text-slate-800 group-hover:text-red-600 py-2">Double Sided Medical Stethoscope</div>
             </a>                                                                                
           </div>    
-          <div class="swiper-button-next text-slate-500 hidden md:block"></div>
-          <div class="swiper-button-prev text-slate-500 hidden md:block"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next popular-button-next text-slate-500 hidden md:block"></div>
+          <div class="swiper-button-prev popular-button-prev text-slate-500 hidden md:block"></div>
+          <div class="swiper-pagination popular-pagination"></div>
       </div>
     </section>
     <!-- End:Popular Products -->
 
     <!-- Start:What we offer -->
     <section class="w-full mb-5 md:mb-10">
-      <div class="flex justify-center px-0 md:px-32 py-5 md:py-32 items-center flex-col bg-[url('./assets/illustrations/illustration-what-we-offer.png')] bg-cover" data-aos="fade-up" data-aos-duration="500">
-        <div class="text-2xl md:text-4xl text-white font-semibold mb-3 md:mb-8">What We Offer</div>
+      <div class="flex justify-center px-0 md:px-32 py-5 md:py-20 items-center flex-col bg-[url('./assets/illustrations/illustration-what-we-offer.png')] bg-cover" data-aos="fade-up" data-aos-duration="500">
+        <div class="text-2xl md:text-4xl text-white font-semibold mb-2 md:mb-8">What We Offer</div>
         <div class="flex divide-x md:text-xl text-slate-300 flex-wrap w-full md:w-3/4 justify-center gap-1 md:gap-3">
           <div class="px-3 md:px-10">Oil Seals</div>
           <div class="px-3 md:px-10">O-Rings</div>
           <div class="px-3 md:px-10">Valve Stem Seals</div>
           <div class="px-3 md:px-10">Rubber Parts</div>
-          <div class="px-3 md:px-10">Metals</div>
-          <div class="px-3 md:px-10">Rubber Materials</div>
+          <div class="px-3 md:px-10">Metal & Springs</div>
+          <div class="px-3 md:px-10">Rubber Material</div>
           <div class="px-3 md:px-10">Mold & Dies</div>
           <div class="px-3 md:px-10">Medical Devices</div>
         </div>
@@ -220,7 +270,7 @@
           <div class="h-32 w-32 md:h-72 md:w-72 overflow-hidden p-3 md:p-8">
             <img src="./assets/Products/metals.jpg" alt="" class="w-full group-hover:scale-125 transition ease-in-out duration-300">
           </div>
-          <div class="md:text-2xl text-slate-800 group-hover:text-red-600 py-2">Metals</div>
+          <div class="md:text-2xl text-slate-800 group-hover:text-red-600 py-2">Metal & Springs</div>
         </a>  
         <a href="" class="flex flex-col items-center justify-around group text-center overflow-hidden" data-aos="fade-up" data-aos-delay="600">
           <div class="h-32 w-32 md:h-72 md:w-72 overflow-hidden p-3 md:p-8">
@@ -247,87 +297,180 @@
       </div>
     </section>
     <!-- End:What we offer -->
-
+    
     <!-- Start:Application -->
     <section class="flex px-3 md:px-32 py-10 bg-[url('./assets/illustrations/illustration-application.jpg')] bg-cover" data-aos="fade-up">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 items-center">
-        <div class="col-span-1 flex flex-col">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-center">
+        <div class="col-span-1">
           <div class="text-xl md:text-3xl text-white mb-1 md:mb-2">Application</div>
           <div class="border border-b-2 border-white w-10 md:w-20 mb-2"></div>
           <p class="text-slate-200 font-light mb-3 md:mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-          <div class="text-white text-base md:text-lg mb-0 md:mb-2" id="caption"></div>
-          <div class="flex items-center gap-3 overflow-x-auto py-3 md:py-0">
-            <!-- <a class="prev" onclick="plusSlides(-1)"><span class="bi bi-chevron-left text-white"></span></a> -->
-            <img src="./assets/illustrations/illustration-oil-seal-application.png" class="thumbnail h-14 cursor-pointer" onclick="currentSlide(1)" alt="Oil Seal Application"/>
-            <img src="./assets/illustrations/illustration-o-ring-application.webp" class="thumbnail h-14 cursor-pointer" onclick="currentSlide(2)" alt="O-Rings Application"/>
-            <img src="./assets/illustrations/illustration-vss-application.jpg" class="thumbnail h-14 cursor-pointer" onclick="currentSlide(3)" alt="Valve Stem Seals Application"/>
-            <img src="./assets/illustrations/illustration-gasket-application.webp" class="thumbnail h-14 cursor-pointer" onclick="currentSlide(4)" alt="Rubber Parts Application"/>   
-            <!-- <a class="next" onclick="plusSlides(1)"><span class="bi bi-chevron-right text-white"></span></a>          -->
+          <div class="text-white text-base md:text-lg mb-1 md:mb-2" id="str1">Oil Seals Application</div>
+          <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str2">O-Rings Application</div>
+          <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str3">Valve Stem Seals Application</div>
+          <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str4">Rubber Parts Application</div>
+          <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str5">Metal & Spring Application</div>
+          <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str6">Medical Devices Application</div>
+          <div class="swiper thumbSwiper h-14 md:h-20" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide cursor-pointer brightness-50">
+                <img src="./assets/illustrations/illustration-oil-seal-application.png" class="h-full w-full block object-cover object-center" id="thums1" alt="Oil Seal Application"/>
+              </div>
+              <div class="swiper-slide cursor-pointer brightness-50">
+                <img src="./assets/illustrations/illustration-o-ring-application.webp" class="h-full w-full block object-cover object-center" id="thums2" alt="O-Rings Application"/>
+              </div>
+              <div class="swiper-slide cursor-pointer brightness-50">
+                <img src="./assets/illustrations/illustration-vss-application.jpg" class="h-full w-full block object-cover object-center" id="thums3" alt="Valve Stem Seals Application"/>
+              </div>
+              <div class="swiper-slide cursor-pointer brightness-50">
+                <img src="./assets/illustrations/illustration-gasket-application.webp" class="h-full w-full block object-cover object-center" id="thums4" alt="Rubber Parts Application"/>
+              </div>
+              <div class="swiper-slide cursor-pointer brightness-50">
+                <img src="./assets/illustrations/illustration-metal-application.jpg" class="h-full w-full block object-cover object-center" id="thums5" alt="Oil Seal Application"/>
+              </div>
+              <div class="swiper-slide cursor-pointer brightness-50">
+                <img src="./assets/illustrations/illustration-medical-application.jpg" class="h-full w-full block object-cover object-center" id="thums6" alt="Oil Seal Application"/>
+              </div>
+            </div>
+            <div class="swiper-button-next application-button-next"></div>
+            <div class="swiper-button-prev application-button-prev"></div>
           </div>
         </div>
-        <div class="col-span-1 mySlides">
-          <img src="./assets/illustrations/illustration-oil-seal-application.png" class="w-full md:h-[500px] transition ease-in-out" alt="">
+        <div class="col-span-1">
+          <div class="swiper applicationSwiper">
+            <div class="swiper-wrapper h-56 md:h-[400px]">
+              <div class="swiper-slide">
+                <img src="./assets/illustrations/illustration-oil-seal-application.png" class="block object-cover object-center w-full h-full"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/illustrations/illustration-o-ring-application.webp" class="block object-cover object-center w-full h-full"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/illustrations/illustration-vss-application.jpg" class="block object-cover object-center w-full h-full"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/illustrations/illustration-gasket-application.webp" class="block object-cover object-center w-full h-full"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/illustrations/illustration-metal-application.jpg" class="block object-cover object-center w-full h-full"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/illustrations/illustration-medical-application.jpg" class="block object-cover object-center w-full h-full"/>
+              </div>
+            </div>  
+          </div>   
         </div>
-        <div class="col-span-1 mySlides">
-          <img src="./assets/illustrations/illustration-o-ring-application.webp" class="w-full md:h-[500px] transition ease-in-out" alt="">
-        </div>
-        <div class="col-span-1 mySlides">
-          <img src="./assets/illustrations/illustration-vss-application.jpg" class="w-full md:h-[500px] transition ease-in-out" alt="">
-        </div>
-        <div class="col-span-1 mySlides">
-          <img src="./assets/illustrations/illustration-gasket-application.webp" class="w-full md:h-[500px] transition ease-in-out" alt="">
-        </div>
+        
       </div>
     </section>
     <!-- End:Application -->
 
     <!-- Start:Our Technology -->
-    <section class="w-full px-2 md:px-32 py-5 md:py-10" data-aos="fade-up">
+    <section class="w-full  py-5 md:py-10" data-aos="fade-up">
       <div class="flex w-full flex-col justify-center items-center mb-5">
         <h1 class="text-xl md:text-3xl text-center mb-1 md:mb-2">Our Technology</h1>
-        <div class="border-b-2 border-red-600 w-20"></div>
+        <div class="border-b-2 border-red-600 w-14 md:w-20"></div>
       </div>
-      <div class="flex items-center justify-center">
-        <img src="./assets/logo/logo-ars.png" class="w-14 md:w-32 border-r border-red-600 pr-2 md:pr-5"/>
-        <p class="pl-2 md:pl-5 font-light text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="hidden md:block swiper technologySwiper">
+        <div class="swiper-wrapper flex">
+          <a href="" class="flex w-full swiper-slide px-2 md:px-44 justify-center group">
+            <img src="./assets/logo/logo-ars.png" class="w-14 md:w-32 border-r border-red-600 pr-2 md:pr-5"/>
+            <p class="pl-2 md:pl-5 font-light text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </a>
+          <a href="" class="flex w-full swiper-slide px-2 md:px-44 justify-center group">
+            <img src="./assets/logo/Logo-hta.png" class="w-14 md:w-32 border-r border-red-600 pr-2 md:pr-5"/>
+            <p class="pl-2 md:pl-5 font-light text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </a>
+          <a href="" class="flex w-full swiper-slide px-2 md:px-44 justify-center group">
+            <img src="./assets/logo/logo-tta.png" class="w-14 md:w-32 border-r border-red-600 pr-2 md:pr-5"/>
+            <p class="pl-2 md:pl-5 font-light text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </a>
+          <a href="" class="flex w-full swiper-slide px-2 md:px-44 justify-center group">
+            <img src="./assets/logo/logo-dcm.png" class="w-14 md:w-20 border-r border-red-600 pr-2 md:pr-5"/>
+            <p class="pl-2 md:pl-5 font-light text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </a>
+          <a href="" class="flex w-full swiper-slide px-2 md:px-44 justify-center group">
+            <img src="./assets/logo/logo-rmu.png" class="w-14 md:w-20 border-r border-red-600 pr-2 md:pr-5"/>
+            <p class="pl-2 md:pl-5 font-light text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </a>
+        </div>
+          <div class="swiper-button-next technology-button-next text-slate-500 hidden md:block pr-32"></div>
+          <div class="swiper-button-prev technology-button-prev text-slate-500 hidden md:block pl-32"></div>
+      </div>
+      <div class="flex md:hidden flex-col gap-2 divide-y divide-slate-300">
+        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="100">
+          <img src="./assets/logo/logo-ars.png" class="w-14 border-r border-red-600 pr-2 md:pr-5"/>
+          <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+          <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
+        </a>
+        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="200">
+          <img src="./assets/logo/Logo-hta.png" class="w-14 border-r border-red-600 pr-2 md:pr-5"/>
+          <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+          <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
+        </a>
+        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="300">
+          <img src="./assets/logo/logo-tta.png" class="w-14 border-r border-red-600 pr-2 md:pr-5"/>
+          <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+          <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
+        </a>
+        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="400">
+          <img src="./assets/logo/logo-dcm.png" class="w-14 border-r border-red-600 px-2 md:pr-5"/>
+          <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+          <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
+        </a>
+        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="500">
+          <img src="./assets/logo/logo-rmu.png" class="w-14 border-r border-red-600 px-2 md:pr-5"/>
+          <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+          <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
+        </a>
       </div>
     </section>
     <!-- End:Our Technology -->
 
     <!-- Start:Our Certificates -->
-    <section class="w-full px-3 md:px-32 py-5 md:py-10 bg-[url('./assets/illustrations/illustration-application.jpg')] bg-cover" data-aos="fade-up">
-      <div class="flex flex-col justify-center items-center gap-2 mb-5">
-        <h1 class="text-xl md:text-3xl text-white text-center">Our Certificates</h1>
-        <div class="border-b-2 border-white w-10 md:w-20"></div>
+    <section class="w-full py-5 md:py-10 bg-[url('./assets/illustrations/illustration-application.jpg')] bg-cover" data-aos="fade-up">
+      <div class="flex flex-col justify-center items-center mb-5">
+        <h1 class="text-xl md:text-3xl text-white text-center mb-1 md:mb-2">Our Certificates</h1>
+        <div class="border-b-2 border-white w-14 md:w-20"></div>
         <p class="text-slate-200 text-center font-light">We have passed ISO9001 quality management system certification, SGS certification, quality is guaranteed.</p>
       </div>
-      <div class="flex gap-5">
-        <div class="relative group h-96" data-aos="fade-up" data-aos-delay="100">
-          <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
-          <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
-        </div>
-        <div class="relative group h-96" data-aos="fade-up" data-aos-delay="200">
-          <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
-          <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
-        </div>
-        <div class="relative group h-96" data-aos="fade-up" data-aos-delay="300">
-          <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
-          <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
-        </div>
-        <div class="relative group h-96" data-aos="fade-up" data-aos-delay="400">
-          <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
-          <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
-        </div>
-        <div class="relative group h-96" data-aos="fade-up" data-aos-delay="500">
-          <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
-          <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
-        </div>
-        <div class="relative group h-96" data-aos="fade-up" data-aos-delay="600">
-          <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
-          <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
-        </div>
-                 
-      </div>
+      <div class="swiper certificateSwiper px-3 md:px-32 pb-10">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="100">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="200">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="300">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="400">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="500">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="600">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="700">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+          <div class="swiper-slide relative flex-shrink-0 group h-60 md:h-[350px]" data-aos="fade-up" data-aos-delay="800">
+            <img src="./assets/certificates/Certificated-sgs.png" class="h-full group-hover:brightness-50 w-full cursor-pointer transition ease-in-out" alt="">
+            <div class="absolute inset-y-1/2 inset-x-0 text-white  text-center items-center align-center hidden group-hover:block">- Certificate -</div>
+          </div>
+        </div>   
+        <div class="swiper-pagination certificate-pagination text-slate-300"></div>
+      </div>   
     </section>
     <!-- End:Our Certificates -->
 
@@ -367,7 +510,7 @@
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">O-Rings</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Valve Stem Seals</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Rubber Parts</a>
-          <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Metals</a>
+          <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Metal</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Rubber Materials</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Mold & Dies</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Medical Devices</a>
@@ -377,7 +520,7 @@
         <div class="text-white">Quick Links</div>
         <ul class="text-slate-300 text-sm md:text-base">
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Products</a></li>
-          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Our Technology</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Technology</a></li>
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> News</a></li>
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Career</a></li>
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Contact Us</a></li>
@@ -386,17 +529,17 @@
       <div class="col-span-2 order-3 md:flex md:flex-col">
         <div class="text-white">Company Profile</div>
         <ul class="text-slate-300 text-sm md:text-base">
-          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span> PT. High Tech Anchillaries Indonesia</a></li>
+          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span> PT. HTA Indonesia</a></li>
           <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. Arai Rubber Seal Indonesia</a></li>
-          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. Tri Tech Anchillaries Indonesia</a></li>
+          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. TTA Indonesia</a></li>
           <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. Dino Custom Mixing</a></li>
           <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. Raja Medika Utama</a></li>
         </ul>
       </div>
       <div class="col-span-3 order-4 md:hidden border-t border-slate-500">
-        <div class="flex justify-between py-2">
+        <div class="flex justify-between pt-2">
           <p class="text-xs font-light text-slate-400">© 2022 HTA Indonesia Group. All right reserved</p>
-          <div class="flex text-slate-300 gap-2 mb-2">
+          <div class="flex text-slate-300 gap-2">
             <a href="" class="bi text-base bi-facebook hover:text-red-500"></a>
             <a href="" class="bi text-base bi-instagram hover:text-red-500"></a>
             <a href="" class="bi text-base bi-linkedin hover:text-red-500"></a>
@@ -406,6 +549,7 @@
       </div>
     </footer>
     <!-- End:Footer -->
+    <a href="#body" class="fixed px-3 md:px-4 py-2 md:py-3 bg-red-500 text-white bottom-3 right-3 rounded-full hover:bg-red-600 active:bg-red-600" id="btnTop"><span class="bi bi-arrow-up"></span></a>
 
     <!-- Tailwind core JavaScript -->
     <script src="/assets/script/jquery.min.js"></script>
@@ -429,7 +573,7 @@
       }
     </script>
     <script>
-      var swiper = new Swiper(".swiper", {
+      var swiper = new Swiper(".popularSwiper", {
       slidesPerView: 4,
       spaceBetween: 30,
       centeredSlides: true,
@@ -451,11 +595,11 @@
       }
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".popular-button-next",
+        prevEl: ".popular-button-prev",
       },
         pagination: {
-          el: ".swiper-pagination",
+          el: ".popular-pagination",
           clickable: true,
         },
       });
@@ -475,34 +619,154 @@
       });
     </script>
     <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
+      var certificateSwiper = new Swiper(".certificateSwiper", {
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          // when window width is >= 720px
+          720: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          // when window width is >= 1080px
+          1080: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        },
+        pagination: {
+          el: ".certificate-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      $('#thums1').click(function() {
+        $('#str1').show();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums2').click(function() {
+        $('#str1').hide();
+        $('#str2').show();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums3').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').show();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums4').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').show();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums5').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').show();
+        $('#str6').hide();
+      });
+      $('#thums6').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').show();
+      });
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("thumbnail");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+      var thumbSwiper = new Swiper(".thumbSwiper", {
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 4,
+            
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 4,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 6,
+          },
+        },
+        spaceBetween: 10,
+        freeMode: true,
+        watchSlidesProgress: true,
+        navigation: {
+          nextEl: ".application-button-next",
+          prevEl: ".application-button-prev",
+        },
+      });
+      var applicationSwiper = new Swiper(".applicationSwiper", {
+        spaceBetween: 10,
+        effect: "fade",
+        thumbs: {
+          swiper: thumbSwiper,
+        },
+      });
+    </script>
+    <script>
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 300) {
+          $('#btnTop').fadeIn();
+        } else {
+          $('#btnTop').fadeOut();
         }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+      });
+    </script>
+    <script>
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+          $('#whiteNav').fadeIn();
+        } else {
+          $('#whiteNav').fadeOut();
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
+      });
+    </script>
+    <script>
+      var technologySwiper = new Swiper(".technologySwiper", {
+        slidesPerView: 1,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".technology-button-next",
+          prevEl: ".technology-button-prev",  
+        },
+      });
     </script>
   </body>
 </html>
