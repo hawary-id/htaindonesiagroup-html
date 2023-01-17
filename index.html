@@ -37,10 +37,10 @@
     <section class="relative shadow-md items-center justify-between">
       <!-- Start:Navbar -->
       <div class="absolute flex justify-around items-start w-full">
-        <nav class="w-full bg-gradient-to-b from-white to-transparent h-32 pt-3" data-aos="zoom-out">
+        <nav class="w-full bg-gradient-to-b from-white to-transparent h-32 pt-1" data-aos="zoom-out">
           <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
             <a href="#" class="flex items-center">
-                <img src="./assets/logo/logo-main-navbar.svg" class="h-6 sm:h-10" alt="Flowbite Logo" />
+                <img src="./assets/logo/logo-main-navbar.svg" class="h-6 sm:h-10" alt=""/>
             </a>
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
@@ -48,45 +48,44 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
               <ul class="flex flex-col md:flex-row md:space-x-8 bg-white md:bg-transparent md:py-0 py-5">
-                <li>
+                <li class="py-3">
                   <a href="#" class="block md:bg-transparent md:p-0 pl-3 pr-4 text-red-600 md:border-b-2 md:border-red-600 w-fit" aria-current="page">Home</a>
                 </li>
-                <li class="group">
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full px-3 text-gray-700  md:hover:text-red-600 md:p-0">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1" id="dropdownChevron"></button>
-                    <!-- Dropdown menu -->
+                <li class="group py-3">
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full px-3 text-gray-700 dropdownNavbarLink md:hover:text-red-600 md:p-0">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 dropdownChevron" id="dropdownChevron"></button>
                     <div id="dropdownNavbar" class="hidden bg-white divide-y divide-gray-100 shadow w-fit">
-                        <ul class=" text-gray-700" aria-labelledby="dropdownLargeButton">
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:text-red-600">PT. High Tech Anchillaries Indonesia</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Arai Rubber Seal Indonesia</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Tri Tech Anchillaries Indonesia</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Dino Custom Mixing</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Raja Medika Utama</a>
-                          </li>
-                        </ul>
+                      <ul class="text-gray-700 divide-y divide-slate-300" aria-labelledby="dropdownLargeButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. High Tech Anchillaries Indonesia</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Arai Rubber Seal Indonesia</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Tri Tech Anchillaries Indonesia</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Dino Custom Mixing</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Raja Medika Utama</a>
+                        </li>
+                      </ul>
                     </div>
                 </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Products</a>
+                <li class="py-3">
+                  <a href="#" class="block pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Products</a>
                 </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Our Technology</a>
+                <li class="py-3">
+                  <a href="#" class="block pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Our Technology</a>
                 </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">News</a>
+                <li class="py-3">
+                  <a href="#" class="block pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">News</a>
                 </li>
-                <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Career</a>
+                <li class="py-3">
+                  <a href="#" class="block pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Career</a>
                 </li>
-                <li>
+                <li class="py-3">
                   <a href="#" class="px-6 py-2 bg-red-600 text-white hover:bg-red-700">Contact Us</a>
                 </li>
               </ul>
@@ -94,7 +93,7 @@
           </div>
         </nav>
       </div>
-      <!-- <nav class="hidden fixed w-full bg-white to-transparent py-3 z-50 shadow-lg transition ease-in-out" id="whiteNav">
+      <nav class="hidden fixed w-full bg-white to-transparent z-50 shadow-lg transition ease-in-out" id="whiteNav">
         <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
           <a href="#" class="flex items-center">
               <img src="./assets/logo/logo-main-navbar.svg" class="h-6 sm:h-10" alt="Flowbite Logo" />
@@ -105,50 +104,50 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 bg-white md:bg-transparent">
-              <li>
+              <li class="py-4">
                 <a href="#" class="block md:bg-transparent text-red-600 border-b-2 border-red-600 w-fit" aria-current="page">Home</a>
               </li>
-              <li class="group">
-                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full px-3 text-gray-700  md:hover:text-red-600 md:p-0">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1" id="dropdownChevron"></button> 
-                  <div id="dropdownNavbar" class="absolute hidden bg-white divide-y top-8 shadow w-fit">
-                      <ul class="text-gray-700" aria-labelledby="dropdownLargeButton">
+              <li class="group py-4">
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownWhiteNavbar" class="flex items-center justify-between w-full  text-gray-700 dropdownNavbarLink md:hover:text-red-600">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 dropdownChevron" id="dropdownChevron"></button> 
+                  <div id="dropdownWhiteNavbar" class="hidden bg-white shadow-lg w-fit fixed">
+                      <ul class="text-gray-700 divide-y divide-slate-300" aria-labelledby="dropdownLargeButton">
                         <li>
-                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. High Tech Anchillaries Indonesia</a>
+                          <a href="#" class="block px-4 pt-4 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. High Tech Anchillaries Indonesia</a>
                         </li>
                         <li>
-                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Arai Rubber Seal Indonesia</a>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Arai Rubber Seal Indonesia</a>
                         </li>
                         <li>
-                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Tri Tech Anchillaries Indonesia</a>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Tri Tech Anchillaries Indonesia</a>
                         </li>
                         <li>
-                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Dino Custom Mixing</a>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Dino Custom Mixing</a>
                         </li>
                         <li>
-                          <a href="#" class="block px-4 py-2 hover:text-red-600">PT. Raja Medika Utama</a>
+                          <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Raja Medika Utama</a>
                         </li>
                       </ul>
                   </div>
               </li>
-              <li>
+              <li class="py-4">
                 <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Products</a>
               </li>
-              <li>
+              <li class="py-4">
                 <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Our Technology</a>
               </li>
-              <li>
+              <li class="py-4">
                 <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">News</a>
               </li>
-              <li>
+              <li class="py-4">
                 <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Career</a>
               </li>
-              <li>
+              <li class="py-4">
                 <a href="#" class="px-6 py-2 bg-red-600 text-white hover:bg-red-700">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav> -->
+      </nav>
       <!-- End:Navbar -->
 
       <!-- Start:Banner -->
@@ -313,23 +312,23 @@
           <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str6">Medical Devices Application</div>
           <div class="swiper thumbSwiper h-14 md:h-20" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
             <div class="swiper-wrapper">
-              <div class="swiper-slide cursor-pointer brightness-50">
-                <img src="./assets/illustrations/illustration-oil-seal-application.png" class="h-full w-full block object-cover object-center" id="thums1" alt="Oil Seal Application"/>
+              <div class="swiper-slide cursor-pointer brightness-50" id="thums1">
+                <img src="./assets/illustrations/illustration-oil-seal-application.png" class="h-full w-full block object-cover object-center" alt="Oil Seal Application"/>
               </div>
-              <div class="swiper-slide cursor-pointer brightness-50">
-                <img src="./assets/illustrations/illustration-o-ring-application.webp" class="h-full w-full block object-cover object-center" id="thums2" alt="O-Rings Application"/>
+              <div class="swiper-slide cursor-pointer brightness-50" id="thums2">
+                <img src="./assets/illustrations/illustration-o-ring-application.webp" class="h-full w-full block object-cover object-center" alt="O-Rings Application"/>
               </div>
-              <div class="swiper-slide cursor-pointer brightness-50">
-                <img src="./assets/illustrations/illustration-vss-application.jpg" class="h-full w-full block object-cover object-center" id="thums3" alt="Valve Stem Seals Application"/>
+              <div class="swiper-slide cursor-pointer brightness-50" id="thums3">
+                <img src="./assets/illustrations/illustration-vss-application.jpg" class="h-full w-full block object-cover object-center" alt="Valve Stem Seals Application"/>
               </div>
-              <div class="swiper-slide cursor-pointer brightness-50">
-                <img src="./assets/illustrations/illustration-gasket-application.webp" class="h-full w-full block object-cover object-center" id="thums4" alt="Rubber Parts Application"/>
+              <div class="swiper-slide cursor-pointer brightness-50" id="thums4">
+                <img src="./assets/illustrations/illustration-gasket-application.webp" class="h-full w-full block object-cover object-center" alt="Rubber Parts Application"/>
               </div>
-              <div class="swiper-slide cursor-pointer brightness-50">
-                <img src="./assets/illustrations/illustration-metal-application.jpg" class="h-full w-full block object-cover object-center" id="thums5" alt="Oil Seal Application"/>
+              <div class="swiper-slide cursor-pointer brightness-50" id="thums5">
+                <img src="./assets/illustrations/illustration-metal-application.jpg" class="h-full w-full block object-cover object-center" alt="Oil Seal Application"/>
               </div>
-              <div class="swiper-slide cursor-pointer brightness-50">
-                <img src="./assets/illustrations/illustration-medical-application.jpg" class="h-full w-full block object-cover object-center" id="thums6" alt="Oil Seal Application"/>
+              <div class="swiper-slide cursor-pointer brightness-50" id="thums6">
+                <img src="./assets/illustrations/illustration-medical-application.jpg" class="h-full w-full block object-cover object-center" alt="Oil Seal Application"/>
               </div>
             </div>
             <div class="swiper-button-next application-button-next"></div>
@@ -510,7 +509,7 @@
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">O-Rings</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Valve Stem Seals</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Rubber Parts</a>
-          <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Metal</a>
+          <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Metals</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Rubber Materials</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Mold & Dies</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Medical Devices</a>
@@ -549,7 +548,7 @@
       </div>
     </footer>
     <!-- End:Footer -->
-    <a href="#body" class="fixed px-3 md:px-4 py-2 md:py-3 bg-red-500 text-white bottom-3 right-3 rounded-full hover:bg-red-600 active:bg-red-600" id="btnTop"><span class="bi bi-arrow-up"></span></a>
+    <!-- <a href="#body" class="fixed px-3 md:px-4 py-2 md:py-3 bg-red-500 text-white bottom-3 right-3 rounded-full hover:bg-red-600 active:bg-red-600" id="btnTop"><span class="bi bi-arrow-up"></span></a> -->
 
     <!-- Tailwind core JavaScript -->
     <script src="/assets/script/jquery.min.js"></script>
@@ -606,14 +605,14 @@
     </script>
     <script>
       $(document).ready(function() {
-        $('#dropdownNavbarLink').click(function(e){
+        $('.dropdownNavbarLink').click(function(e){
           e.stopPropagation();
-          $('#dropdownChevron').toggleClass('rotate-180')
+          $('.dropdownChevron').toggleClass('rotate-180')
         });
 
         $('body').click(function(){
-          if($('#dropdownChevron').hasClass('rotate-180')){
-            $('#dropdownChevron').removeClass('rotate-180')
+          if($('.dropdownChevron').hasClass('rotate-180')){
+            $('.dropdownChevron').removeClass('rotate-180')
           }
         })
       });
