@@ -49,12 +49,12 @@
             <div class="hidden w-full md:block md:w-auto">
               <ul class="flex flex-col md:flex-row md:space-x-8 bg-white md:bg-transparent md:py-0 py-5">
                 <li class="py-3">
-                  <a href="#" class="block md:bg-transparent md:p-0 pl-3 pr-4 text-red-600 md:border-b-2 md:border-red-600 w-fit" aria-current="page">Home</a>
+                  <a href="#" class="block md:bg-transparent md:p-0 pl-3 pr-4 text-red-600" aria-current="page">Home</a>
                 </li>
                 <li class="group py-3">
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full px-3 text-gray-700 dropdownNavbarLink md:hover:text-red-600 md:p-0">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 dropdownChevron" id="dropdownChevron"></button>
-                    <div id="dropdownNavbar" class="hidden bg-white divide-y divide-gray-100 shadow w-fit">
-                      <ul class="text-gray-700 divide-y divide-slate-300" aria-labelledby="dropdownLargeButton">
+                  <a href="company-profile.html" class="flex items-center justify-between w-full text-gray-700 md:group-hover:text-red-600">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                  <div class="hidden bg-white shadow-lg w-fit fixed group-hover:flex">
+                      <ul class="text-gray-700 divide-y divide-slate-300">
                         <li>
                           <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. High Tech Anchillaries Indonesia</a>
                         </li>
@@ -71,8 +71,8 @@
                           <a href="#" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Raja Medika Utama</a>
                         </li>
                       </ul>
-                    </div>
-                </li>
+                  </div>
+              </li>
                 <li class="py-3">
                   <a href="#" class="block pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0">Products</a>
                 </li>
@@ -106,12 +106,12 @@
           <div class="hidden w-full md:block md:w-auto">
             <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 bg-white md:bg-transparent">
               <li class="py-4">
-                <a href="#" class="block md:bg-transparent text-red-600 border-b-2 border-red-600 w-fit" aria-current="page">Home</a>
+                <a href="#" class="block md:bg-transparent text-red-600" aria-current="page">Home</a>
               </li>
               <li class="group py-4">
-                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownWhiteNavbar" class="flex items-center justify-between w-full  text-gray-700 dropdownNavbarLink md:hover:text-red-600">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 dropdownChevron" id="dropdownChevron"></button> 
-                  <div id="dropdownWhiteNavbar" class="hidden bg-white shadow-lg w-fit fixed">
-                      <ul class="text-gray-700 divide-y divide-slate-300" aria-labelledby="dropdownLargeButton">
+                  <button class="flex items-center justify-between w-full text-gray-700 md:group-hover:text-red-600">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></button> 
+                  <div class="hidden bg-white shadow-lg w-fit fixed group-hover:flex">
+                      <ul class="text-gray-700 divide-y divide-slate-300">
                         <li>
                           <a href="#" class="block px-4 pt-4 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. High Tech Anchillaries Indonesia</a>
                         </li>
@@ -177,18 +177,18 @@
         </ul>
       </div>
       <!-- End:mobile Navbar -->
-      
+
       <!-- End:Navbar -->
 
       <!-- Start:Banner -->
       <div class="relative w-full -z-10" data-aos="zoom-in">
         <div class="bg-[url('/assets/illustrations/illustration-main-banner.jpg')] h-72 md:h-screen w-full bg-cover bg-center">
-          <div class="w-full h-full bg-gradient-to-tr from-slate-800 to-transparent"></div>
+          <div class="w-full h-full bg-gradient-to-tr from-slate-900 to-transparent"></div>
           <div class="absolute inset-x-1 inset-y-0 grid grid-cols-3 px-3 md:px-32 items-center">
             <div class="col-span-2 flex flex-col">
-              <div class="text-xl md:text-8xl text-white font-semibold">HTA INDONESIA GROUP</div>
-              <div class="text-sm md:text-2xl text-slate-50 mb-3 md:mb-10">Lorem ipsum is simply dummy text of the printing and typesetting industry</div>
-              <div class="flex gap-3 md:gap-6">
+              <div class="text-xl md:text-8xl text-white font-semibold">HTA Indonesia Group</div>
+              <div class="text-sm md:text-2xl text-slate-50 mb-3 md:mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+              <div class="flex gap-3 md:gap-20">
                 <img src="./assets/icons/icon-iso.svg" class="h-10 md:h-32 text-white"/>
                 <img src="./assets/icons/icon-sgs.svg" class="h-10 md:h-32"/>
                 <img src="./assets/icons/icon-jis.svg" class="h-10 md:h-32"/>
@@ -207,7 +207,7 @@
     <section class="grid grid-cols-1 md:grid-cols-6 py-5 md:py-10 items-center w-full" data-aos="fade-up">
       <div class="col-span-1 md:col-span-2 px-2 md:pl-32">
         <div class="flex flex-col">
-          <div class="text-xl md:text-3xl w-fit mb-1 md:mb-2">Popular Products</div>
+          <div class="text-xl md:text-3xl w-fit mb-1 md:mb-2 text-slate-900">Popular Products</div>
           <div class="border border-b-2 border-red-600 w-10 md:w-20 mb-2"></div>
           <div class="text-base text-slate-600 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
           <a href="" class="px-4 py-1 md:py-2 bg-red-600 text-white w-fit hover:bg-red-700">View All Products</a>
@@ -329,7 +329,7 @@
     
     <!-- Start:Application -->
     <section class="flex px-3 md:px-32 py-10 bg-[url('./assets/illustrations/illustration-application.jpg')] bg-cover" data-aos="fade-up">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 items-center">
         <div class="col-span-1">
           <div class="text-xl md:text-3xl text-white mb-1 md:mb-2">Application</div>
           <div class="border border-b-2 border-white w-10 md:w-20 mb-2"></div>
@@ -340,7 +340,7 @@
           <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str4">Rubber Parts Application</div>
           <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str5">Metal & Spring Application</div>
           <div class="text-white text-base md:text-lg mb-1 md:mb-2 hidden" id="str6">Medical Devices Application</div>
-          <div class="swiper thumbSwiper h-14 md:h-20" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+          <div class="swiper thumbSwiper h-14 md:h-20">
             <div class="swiper-wrapper">
               <div class="swiper-slide cursor-pointer brightness-50" id="thums1">
                 <img src="./assets/illustrations/illustration-oil-seal-application.png" class="h-full w-full block object-cover object-center" alt="Oil Seal Application"/>
@@ -361,8 +361,8 @@
                 <img src="./assets/illustrations/illustration-medical-application.jpg" class="h-full w-full block object-cover object-center" alt="Oil Seal Application"/>
               </div>
             </div>
-            <div class="swiper-button-next application-button-next"></div>
-            <div class="swiper-button-prev application-button-prev"></div>
+            <div class="swiper-button-prev application-button-prev text-white"></div>
+            <div class="swiper-button-next application-button-next text-white"></div>
           </div>
         </div>
         <div class="col-span-1">
@@ -397,7 +397,7 @@
     <!-- Start:Our Technology -->
     <section class="w-full  py-5 md:py-10" data-aos="fade-up">
       <div class="flex w-full flex-col justify-center items-center mb-5">
-        <h1 class="text-xl md:text-3xl text-center mb-1 md:mb-2">Our Technology</h1>
+        <h1 class="text-xl md:text-3xl text-center mb-1 md:mb-2 text-slate-900">Our Technology</h1>
         <div class="border-b-2 border-red-600 w-14 md:w-20"></div>
       </div>
       <div class="hidden md:block swiper technologySwiper">
@@ -426,28 +426,28 @@
           <div class="swiper-button-next technology-button-next text-slate-500 hidden md:block pr-32"></div>
           <div class="swiper-button-prev technology-button-prev text-slate-500 hidden md:block pl-32"></div>
       </div>
-      <div class="flex md:hidden flex-col gap-2 divide-y divide-slate-300">
-        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="100">
+      <div class="flex md:hidden flex-col divide-y divide-slate-300">
+        <a href="" class="flex w-full px-2 py-1 items-center justify-center group" data-aos="fade-right" data-aos-delay="100">
           <img src="./assets/logo/logo-ars.png" class="w-14 border-r border-red-600 pr-2 md:pr-5"/>
           <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
           <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
         </a>
-        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="200">
+        <a href="" class="flex w-full px-2 py-1 items-center justify-center group" data-aos="fade-right" data-aos-delay="200">
           <img src="./assets/logo/Logo-hta.png" class="w-14 border-r border-red-600 pr-2 md:pr-5"/>
           <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
           <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
         </a>
-        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="300">
+        <a href="" class="flex w-full px-2 py-1 items-center justify-center group" data-aos="fade-right" data-aos-delay="300">
           <img src="./assets/logo/logo-tta.png" class="w-14 border-r border-red-600 pr-2 md:pr-5"/>
           <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
           <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
         </a>
-        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="400">
+        <a href="" class="flex w-full px-2 py-1 items-center justify-center group" data-aos="fade-right" data-aos-delay="400">
           <img src="./assets/logo/logo-dcm.png" class="w-14 border-r border-red-600 px-2 md:pr-5"/>
           <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
           <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
         </a>
-        <a href="" class="flex w-full px-2 items-center justify-center group" data-aos="fade-right" data-aos-delay="500">
+        <a href="" class="flex w-full px-2 py-1 items-center justify-center group" data-aos="fade-right" data-aos-delay="500">
           <img src="./assets/logo/logo-rmu.png" class="w-14 border-r border-red-600 px-2 md:pr-5"/>
           <p class="pl-2 md:pl-5 font-light text-sm text-slate-600 group-hover:text-red-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
           <span class="bi bi-chevron-right text-slate-400 text-2xl group-hover:text-red-600"></span>
@@ -503,6 +503,34 @@
     </section>
     <!-- End:Our Certificates -->
 
+    <!-- Start:Profesional Multi Business Company -->
+    <section class="w-full py-5 md:py-10 px-3 md:px-32">
+      <div class="flex w-full flex-col justify-center items-center mb-4 md:mb-5" data-aos="fade-up">
+        <h1 class="text-xl md:text-3xl text-center mb-1 md:mb-2 text-slate-900">Profesional Multi Business Company</h1>
+        <div class="border-b-2 border-red-600 w-14 md:w-20 mb-2"></div>
+        <p class="text-slate-600 text-center font-light md:px-20">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="grid grid-cols-3 gap-2 md:gap-14 md:px-24 justify-around">
+        <flex class="flex-col justify-start" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-3xl md:text-5xl text-red-600 bi bi-archive"></div>
+          <div class="text-lg md:text-2xl text-slate-700">Lorem Epsum</div>
+          <div class="text-sm md:text-base text-slate-600 font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </flex>
+        <flex class="flex-col justify-start" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-3xl md:text-5xl text-red-600 bi bi-building-fill-gear"></div>
+          <div class="text-lg md:text-2xl text-slate-700">Lorem Epsum</div>
+          <div class="text-sm md:text-base text-slate-600 font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </flex>
+        <flex class="flex-col justify-start" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-3xl md:text-5xl text-red-600 bi bi-send-check"></div>
+          <div class="text-lg md:text-2xl text-slate-700">Lorem Epsum</div>
+          <div class="text-sm md:text-base text-slate-600 font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </flex>
+        
+      </div>
+    </section>
+    <!-- Start:Profesional Multi Business Company -->
+
     <!-- Start:HTA Group Logo -->
     <section class="flex justify-around px-3 md:px-32 py-3 md:py-5" data-aos="fade-up">
       <img src="./assets/logo/Logo-hta.png" alt="" class="h-5 md:h-10">
@@ -514,32 +542,32 @@
     <!-- End:HTA Group Logo -->
 
     <!-- Start:Footer -->
-    <footer class="bg-slate-800 grid grid-cols-3 gap-3 md:flex md:justify-between md:items-center py-3 md:py-5 px-3 md:px-32" data-aos="fade-down">
-      <div class="hidden col-span-3 order-4 md:order-1 md:flex md:flex-col">
-        <div class="flex gap-3 justify-start items-center mb-2 md:mb-4">
-          <img src="./assets/logo/hta-logo.svg" alt="" class="h-12">
+    <footer class="bg-slate-800 grid grid-cols-3 md:flex md:justify-around py-3 md:py-5 px-3 md:px-32" data-aos="fade-down">
+      <div class="col-span-3 order-1 md:order-1 md:flex md:flex-col border-b border-slate-300 md:border-b-0 pb-1 md:pb-0 mb-3 md:mb-0">
+        <div class="flex gap-2 md:gap-3 justify-start items-center mb-2 md:mb-4">
+          <img src="./assets/logo/hta-logo.svg" alt="" class="h-8 md:h-12">
           <div class="flex flex-col leading-none">
-            <div class="text-lg md:text-2xl font-semibold text-red-600">HTA Indonesia Group</div>
-            <div class="text-slate-50 text-sm">Quality is Our Identity</div>
+            <div class="text-md md:text-2xl font-semibold text-red-600">HTA Indonesia Group</div>
+            <div class="text-slate-100 text-xs md:text-sm">Quality is Our Identity</div>
           </div>
         </div>   
-        <div class="text-slate-200 text-sm md:font-light">Follow us on social media</div>     
-        <div class="flex text-slate-300 gap-5 mb-2">
+        <div class="hidden md:block text-slate-200 text-sm md:font-light">Follow us on social media</div>     
+        <div class="hidden md:flex text-slate-300 gap-5 mb-2">
           <a href="" class="bi text-lg md:text-2xl bi-facebook hover:text-red-500"></a>
           <a href="" class="bi text-lg md:text-2xl bi-instagram hover:text-red-500"></a>
           <a href="" class="bi text-lg md:text-2xl bi-linkedin hover:text-red-500"></a>
         </div>
-        <p class="text-sm font-light text-slate-400">© 2022 HTA Indonesia Group. All right reserved</p>
+        <p class="hidden md:block text-sm font-light text-slate-400">© 2022 HTA Indonesia Group. All right reserved</p>
       </div>
       
-      <div class="col-span-3 md:col-span-1 order-1 md:flex md:flex-col md:w-1/4">
+      <div class="col-span-2 order-1 md:flex md:flex-col md:w-1/4 mb-3 md:mb-0">
         <div class="text-white mb-1 md:mb-2">What We Offer</div>
         <div class="flex flex-wrap gap-2 md:gap-3 text-slate-300 text-sm">
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Oil Seals</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">O-Rings</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Valve Stem Seals</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Rubber Parts</a>
-          <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Metals</a>
+          <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Metals & Springs</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Rubber Materials</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Mold & Dies</a>
           <a href="" class="px-3 md:px-6 py-1 border border-slate-400 hover:bg-red-500 hover:border-red-500 hover:text-white">Medical Devices</a>
@@ -548,25 +576,28 @@
       <div class="col-span-1 order-2 md:flex md:flex-col">
         <div class="text-white">Quick Links</div>
         <ul class="text-slate-300 text-sm md:text-base">
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Home</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Company Profile</a></li>
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Products</a></li>
-          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Technology</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Our Technology</a></li>
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> News</a></li>
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Career</a></li>
           <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> Contact Us</a></li>
         </ul>
       </div>
-      <div class="col-span-2 order-3 md:flex md:flex-col">
-        <div class="text-white">Company Profile</div>
+      <div class="hidden order-3 md:flex md:flex-col">
+        <div class="text-white">Company Group</div>
         <ul class="text-slate-300 text-sm md:text-base">
-          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span> PT. HTA Indonesia</a></li>
-          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. Arai Rubber Seal Indonesia</a></li>
-          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. TTA Indonesia</a></li>
-          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. Dino Custom Mixing</a></li>
-          <li><a href="" class="hover:text-red-600"><span class="bi bi-chevron-right"></span>  PT. Raja Medika Utama</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> PT. High Tech Anchillaries Indonesia</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> PT. Arai Rubber Seal Indonesia</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> PT. Tri Tech Anchillaries Indonesia</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> PT. Dino Custom Mixing</a></li>
+          <li><a href="" class="hover:text-red-500"><span class="bi bi-chevron-right"></span> PT. Raja Medika Utama</a></li>
         </ul>
       </div>
+      
       <div class="col-span-3 order-4 md:hidden border-t border-slate-500">
-        <div class="flex justify-between pt-2">
+        <div class="flex justify-between pt-2 items-center">
           <p class="text-xs font-light text-slate-400">© 2022 HTA Indonesia Group. All right reserved</p>
           <div class="flex text-slate-300 gap-2">
             <a href="" class="bi text-base bi-facebook hover:text-red-500"></a>
@@ -578,6 +609,7 @@
       </div>
     </footer>
     <!-- End:Footer -->
+
     <!-- <a href="#body" class="fixed px-3 md:px-4 py-2 md:py-3 bg-red-500 text-white bottom-3 right-3 rounded-full hover:bg-red-600 active:bg-red-600" id="btnTop"><span class="bi bi-arrow-up"></span></a> -->
 
     <!-- Tailwind core JavaScript -->
@@ -775,24 +807,12 @@
           e.preventDefault();
           $('#mobileNavbar').toggleClass('hidden');
         })
-        
-        //Dropdown Mobile menu
-        $('.dropdownNavbarLink').click(function(e){
-          e.stopPropagation();
-          $('.dropdownChevron').toggleClass('rotate-180')
-        });
 
         $('#buttonDropdown').click(function(e){
           e.stopPropagation();
           $('#menuDropdown').toggleClass('hidden')
           $('.dropdownChevron').toggleClass('rotate-180')
         });
-
-        $('body').click(function(){
-          if($('.dropdownChevron').hasClass('rotate-180')){
-            $('.dropdownChevron').removeClass('rotate-180')
-          }
-        })
       });
 
       //Scrollbar
@@ -803,11 +823,11 @@
         } else {
           $('#whiteNav').fadeOut();
         }
-        if (y > 300) {
-          $('#btnTop').fadeIn();
-        } else {
-          $('#btnTop').fadeOut();
-        }
+        // if (y > 300) {
+        //   $('#btnTop').fadeIn();
+        // } else {
+        //   $('#btnTop').fadeOut();
+        // }
       });
     </script>
   </body>
