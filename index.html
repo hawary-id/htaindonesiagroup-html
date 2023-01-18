@@ -42,11 +42,11 @@
             <a href="#" class="flex items-center">
                 <img src="./assets/logo/logo-main-navbar.svg" class="h-8 md:h-10" alt=""/>
             </a>
-            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
+            <button type="button" class="inline-flex items-center text-sm text-gray-500 md:hidden rounded-md hover:bg-gray-100 buttonNavbar">
               <span class="sr-only">Open main menu</span>
-              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              <span class="bi bi-list text-2xl"></span>
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <div class="hidden w-full md:block md:w-auto">
               <ul class="flex flex-col md:flex-row md:space-x-8 bg-white md:bg-transparent md:py-0 py-5">
                 <li class="py-3">
                   <a href="#" class="block md:bg-transparent md:p-0 pl-3 pr-4 text-red-600 md:border-b-2 md:border-red-600 w-fit" aria-current="page">Home</a>
@@ -93,16 +93,16 @@
           </div>
         </nav>
       </div>
-      <nav class="hidden fixed w-full bg-white to-transparent z-50 shadow-lg transition ease-in-out" id="whiteNav">
+      <nav class="hidden fixed w-full bg-white to-transparent z-50 shadow-lg transition ease-in-out py-1 md:py-0" id="whiteNav">
         <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
           <a href="#" class="flex items-center">
-              <img src="./assets/logo/logo-main-navbar.svg" class="h-10 md:h-8" alt="Flowbite Logo" />
+              <img src="./assets/logo/logo-main-navbar.svg" class="h-8 md:h-10" alt="Flowbite Logo" />
           </a>
-          <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
+          <button type="button" class="inline-flex items-center text-sm text-gray-500 md:hidden rounded-md hover:bg-gray-100 buttonNavbar">
             <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <span class="bi bi-list text-2xl"></span>
           </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <div class="hidden w-full md:block md:w-auto">
             <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 bg-white md:bg-transparent">
               <li class="py-4">
                 <a href="#" class="block md:bg-transparent text-red-600 border-b-2 border-red-600 w-fit" aria-current="page">Home</a>
@@ -148,6 +148,34 @@
           </div>
         </div>
       </nav>
+
+      <!-- Start:mobile Navbar -->
+      <div class="hidden flex flex-col fixed h-screen w-screen md:hidden bg-slate-800 z-50 text-slate-300 px-3 transition ease-in-out" id="mobileNavbar">
+        <button class="py-2 self-end buttonNavbar"><span class="bi bi-x-lg"></span></button>
+        <ul class="px-3">
+          <li><a href="" class="py-2 block text-red-500 hover:text-red-500">Home</a></li>
+          <li>
+            <div class="block">
+              <button class="py-2 block w-full text-left hover:text-red-500" id="buttonDropdown">Company Profile <span class="bi bi-chevron-down transition ease-out dropdownChevron"></span></button>
+            </div>
+            <ul class="pl-2 hidden transition ease-in-out" id="menuDropdown">
+              <li><a href="" class="py-1 block hover:text-red-500">PT. High Tech Anchillaries Indonesia</a></li>
+              <li><a href="" class="py-1 block hover:text-red-500">PT. Arai Rubber Seal Indonesia</a></li>
+              <li><a href="" class="py-1 block hover:text-red-500">PT. Tri Tech Anchillaries Indonesia</a></li>
+              <li><a href="" class="py-1 block hover:text-red-500">PT. Dino Custom Mixing</a></li>
+              <li><a href="" class="py-1 block hover:text-red-500">PT. Raja Medika Utama</a></li>
+            </ul>
+
+          </li>
+          <li><a href="" class="py-2 block w-full hover:text-red-500">Products</a></li>
+          <li><a href="" class="py-2 block w-full hover:text-red-500">Our Technology</a></li>
+          <li><a href="" class="py-2 block w-full hover:text-red-500">News</a></li>
+          <li><a href="" class="py-2 block w-full hover:text-red-500">Career</a></li>
+          <li><a href="" class="py-2 block w-full hover:text-red-500">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- End:mobile Navbar -->
+      
       <!-- End:Navbar -->
 
       <!-- Start:Banner -->
@@ -560,6 +588,8 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- Tailwind Config -->
     <script>
       tailwind.config = {
         theme: {
@@ -571,7 +601,10 @@
         }
       }
     </script>
+
+    <!-- Swiper -->
     <script>
+      //Swiper Popular Product
       var swiper = new Swiper(".popularSwiper", {
       centeredSlides: true,
       breakpoints: {
@@ -600,57 +633,8 @@
           clickable: true,
         },
       });
-    </script>
-    <script>
-      $(document).ready(function() {
-        $('.dropdownNavbarLink').click(function(e){
-          e.stopPropagation();
-          $('.dropdownChevron').toggleClass('rotate-180')
-        });
 
-        $('body').click(function(){
-          if($('.dropdownChevron').hasClass('rotate-180')){
-            $('.dropdownChevron').removeClass('rotate-180')
-          }
-        })
-      });
-    </script>
-    <script>
-      var certificateSwiper = new Swiper(".certificateSwiper", {
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 20
-          },
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          // when window width is >= 720px
-          720: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          // when window width is >= 1080px
-          1080: {
-            slidesPerView: 6,
-            spaceBetween: 20,
-          },
-        },
-        pagination: {
-          el: ".certificate-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <script>
+      //Swiper Applications
       $('#thums1').click(function() {
         $('#str1').show();
         $('#str2').hide();
@@ -731,28 +715,8 @@
           swiper: thumbSwiper,
         },
       });
-    </script>
-    <script>
-      $(document).scroll(function() {
-        var y = $(this).scrollTop();
-        if (y > 300) {
-          $('#btnTop').fadeIn();
-        } else {
-          $('#btnTop').fadeOut();
-        }
-      });
-    </script>
-    <script>
-      $(document).scroll(function() {
-        var y = $(this).scrollTop();
-        if (y > 100) {
-          $('#whiteNav').fadeIn();
-        } else {
-          $('#whiteNav').fadeOut();
-        }
-      });
-    </script>
-    <script>
+
+      //Swiper Technology
       var technologySwiper = new Swiper(".technologySwiper", {
         slidesPerView: 1,
         autoplay: {
@@ -763,6 +727,85 @@
           nextEl: ".technology-button-next",
           prevEl: ".technology-button-prev",  
         },
+      });
+
+      //Swiper Certificates
+      var certificateSwiper = new Swiper(".certificateSwiper", {
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          // when window width is >= 720px
+          720: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          // when window width is >= 1080px
+          1080: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        },
+        pagination: {
+          el: ".certificate-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <!-- Dropdown & Scrollbar -->
+    <script>
+      $(document).ready(function() {
+        //Mobile Menu
+        $('.buttonNavbar').click(function(e){
+          e.preventDefault();
+          $('#mobileNavbar').toggleClass('hidden');
+        })
+        
+        //Dropdown Mobile menu
+        $('.dropdownNavbarLink').click(function(e){
+          e.stopPropagation();
+          $('.dropdownChevron').toggleClass('rotate-180')
+        });
+
+        $('#buttonDropdown').click(function(e){
+          e.stopPropagation();
+          $('#menuDropdown').toggleClass('hidden')
+          $('.dropdownChevron').toggleClass('rotate-180')
+        });
+
+        $('body').click(function(){
+          if($('.dropdownChevron').hasClass('rotate-180')){
+            $('.dropdownChevron').removeClass('rotate-180')
+          }
+        })
+      });
+
+      //Scrollbar
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+          $('#whiteNav').fadeIn();
+        } else {
+          $('#whiteNav').fadeOut();
+        }
+        if (y > 300) {
+          $('#btnTop').fadeIn();
+        } else {
+          $('#btnTop').fadeOut();
+        }
       });
     </script>
   </body>
