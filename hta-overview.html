@@ -27,7 +27,7 @@
 
   <body id="body">
     <!-- Start:White Navbar -->
-    <nav class="fixed w-full bg-white z-50 top-0 shadow-lg transition ease-in-out py-1 md:py-0">
+    <nav class="fixed w-full bg-white z-50 top-0 shadow-lg transition ease-in-out py-1 md:py-0" data-aos="zoom-out">
       <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
         <a href="index.html" class="flex items-center">
             <img src="./assets/logo/logo-main-navbar.svg" class="h-8 md:h-10" alt="HTA Logo" />
@@ -112,16 +112,17 @@
     <!-- End:mobile Navbar -->   
     
     <!-- Start:Banner -->
-    <section class="relative mt-10 md:mt-14 flex justify-center items-center w-full h-32 md:h-80 bg-cover bg-center bg-[url('./assets/illustrations/illustration-banner-company-profile.jpg')]">
-      <div class="absolute opacity-50 z-0 w-full h-full bg-slate-900"></div>
+    <section class="relative mt-10 md:mt-14 flex justify-center items-center w-full h-32 md:h-80 bg-cover bg-center bg-[url('./assets/illustrations/illustration-banner-company-profile.jpg')]" data-aos="zoom-in">
+      <div class="absolute opacity-75 z-0 w-full h-full bg-slate-900"></div>
       <div class="text-2xl md:text-6xl text-white z-10 text-center">Company Profile</div>
     </section>
     <!-- End:Banner -->
-    
-    <!-- Start:Breadcrumb -->
-    <section class="w-full px-3 py-2 md:px-32 md:py-3">
-      <nav class="flex" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+  
+    <!-- Start:Content -->
+    <section class="w-full px-3 md:px-32 mb-5">
+      <!-- Start:Breadcrumb -->
+      <nav class="flex w-full py-2 md:py-3 mb-2" aria-label="Breadcrumb">
+        <ol class="inline-flex flex-wrap items-center space-x-1 md:space-x-3">
           <li>
             <div class="flex items-center">
               <a href="index.html" class="text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Home</a>
@@ -130,55 +131,72 @@
           <li>
             <div class="flex items-center">
               <span class="bi bi-chevron-right"></span>
-              <a href="company-profile.html" class="ml-1 text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Company Profile</a>
+              <a href="company-profile.html" class="ml-1 md:ml-2 text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Company Profile</a>
             </div>
           </li>
           <li>
             <div class="flex items-center">
               <span class="bi bi-chevron-right"></span>
-              <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">PT. High Tech Anchillaries Indonesia</span>
+              <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">PT. High Tech Anchillaries Indoneisa</span>
             </div>
           </li>
         </ol>
-      </nav>
-    </section>
-    <!-- End:Breadcrumb -->
+      </nav>    
+      <!-- End:Breadcrumb -->
 
-    <!-- Start:Content -->
-    <section class="w-full px-3 md:px-32 py-2 md:py-5">
+      <!-- Start:Header -->
       <div class="flex flex-col">
         <div class="text-xl md:text-3xl w-fit mb-1 md:mb-2 text-slate-900">PT. High Tech Anchillaries Indonesia</div>
         <div class="border border-b-2 border-red-600 w-10 md:w-20 mb-3 md:mb-5"></div>
       </div>
+      <!-- End:Header -->
 
-      <div class="flex text-slate-700 text-lg divide-x divide-slate-300 w-full items-center mb-5 md:mb-8">
-        <a href="" class="pr-6 hover:text-red-600 font-semibold text-red-600">Overview</a>
-        <a href="" class="px-6 hover:text-red-600">Our Culture</a>
-        <a href="" class="px-6 hover:text-red-600">Technology</a>
-        <a href="" class="px-6 hover:text-red-600">Products</a>
-        <a href="" class="px-6 hover:text-red-600">Contact Us</a>
+      <!-- Start:Tab Menu -->
+      <div class="flex flex-wrap text-slate-700 text-base md:text-lg divide-x divide-slate-300 w-full items-center mb-5">
+        <a href="hta-overview.html" class="pr-4 md:pr-6 hover:text-red-600 font-semibold text-red-600">Overview</a>
+        <a href="hta-culture.html" class="px-4 md:px-6 hover:text-red-600">Our Culture</a>
+        <a href="hta-technology.html" class="px-4 md:px-6 hover:text-red-600">Technology</a>
+        <a href="hta-products.html" class="px-4 md:px-6 hover:text-red-600">Products</a>
+        <a href="hta-contact.html" class="px-4 md:px-6 hover:text-red-600">Contact Us</a>
       </div>
+      <!-- End:Tab Menu -->
 
       <div class="flex flex-col">
-        <div class="text-lg text-slate-800 font-semibold border-l-2 border-red-600 mb-3 md:mb-5"><span class="ml-3">Company Overview</span></div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
+        <div class="text-lg text-slate-800 font-semibold border-l-4 border-red-600 mb-3 md:mb-5"><span class="ml-2">Company Overview</span></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8">
           <div class="flex flex-col gap-3">
-            <img src="./assets/illustrations/illustration-overview-hta.jpg" class="w-full" alt="">
-            <p class="text-slate-600 text-justify indent-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            <img src="./assets/illustrations/illustration-overview-hta.jpg" class="w-full" alt="" data-aos="fade-up">
+            <p class="text-slate-600 text-justify indent-8" data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
           </div>
-          <div class="flex flex-col gap-3">
-            <flex class="flex-col gap-2">
+          <div class="flex flex-col gap-2 md:gap-3">
+            <div class="flex-col gap-1 md:gap-2" data-aos="fade-up">
               <div class="text-sm text-slate-600">Company Name</div>
-              <div class="text-xl font-semibold text-red-600">PT. High Tect Anchillaries Indonesia</div>
-            </flex>
-            <flex class="flex-col gap-2">
+              <div class="text-base md:text-xl font-semibold text-red-600">PT. HIGH TECH ANCHILLARIES INDONESIA</div>
+            </div>
+            <div class="flex-col gap-1 md:gap-2" data-aos="fade-up">
               <div class="text-sm text-slate-600">Date of establishment</div>
-              <div class="text-xl font-semibold text-slate-800">August 16, 1989</div>
-            </flex>
-            <flex class="flex-col gap-2">
+              <div class="text-base md:text-xl font-semibold text-slate-700">August 16, 1989</div>
+            </div>
+            <div class="flex-col gap-1 md:gap-2" data-aos="fade-up">
               <div class="text-sm text-slate-600">Capital</div>
-              <div class="text-xl font-semibold text-slate-800">100 milion yen</div>
-            </flex>
+              <div class="text-base md:text-xl font-semibold text-slate-700">100 milion yen</div>
+            </div>
+            <div class="flex-col gap-1 md:gap-2" data-aos="fade-up">
+              <div class="text-sm text-slate-600">President</div>
+              <div class="text-base md:text-xl font-semibold text-red-600">Peter Indra Lembong</div>
+            </div>
+            <div class="flex-col gap-1 md:gap-2" data-aos="fade-up">
+              <div class="text-sm text-slate-600">Number of employees</div>
+              <div class="text-base md:text-xl font-semibold text-slate-700">1,174 Employees</div>
+            </div>
+            <div class="flex-col gap-1 md:gap-2" data-aos="fade-up">
+              <div class="text-sm text-slate-600">Head Office</div>
+              <div class="text-base md:text-xl font-semibold text-slate-700">Zona industri manis Jl. Manis II no 2, Kadu, Kec. Curug Kab. Tangerang- Indoneisa</div>
+            </div>
+            <div class="flex-col gap-1 md:gap-2" data-aos="fade-up">
+              <div class="text-sm text-slate-600">Main of business</div>
+              <div class="text-base md:text-xl font-semibold text-slate-700">Development, manufacture and sale of rubber seal parts for transport equipment and OA device parts</div>
+            </div>
           </div>
         </div>
       </div>
