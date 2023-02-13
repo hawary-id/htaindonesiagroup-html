@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>HTA Indonesia Group - About Company</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo/logo-hta.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" /> -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        .swiper-pagination-bullet-active {
+            background-color: rgb(220, 38, 38);
+        }
+        
+        .thumbSwiper .swiper-slide-thumb-active {
+          filter:brightness(1);
+        }
+      </style>
+  </head>
+
+  <body id="body" class="z-0">
+    <!-- Start:Navbar -->
+    <nav class="fixed top-0 w-full bg-white z-50 shadow-xl py-1 md:py-0" data-aos="zoom-out">
+      <div class="flex flex-wrap items-center justify-between px-2 md:px-0 container mx-auto">
+        <a href="index.html" class="flex items-center">
+            <img src="./assets/logo/logo-main-navbar.svg" class="h-10 md:h-14" alt="HTA Logo" />
+        </a>
+        <button type="button" class="inline-flex items-center text-sm text-gray-500 md:hidden rounded-md hover:bg-gray-100 buttonNavbar">
+          <span class="sr-only">Open main menu</span>
+          <span class="bi bi-list text-2xl"></span>
+        </button>
+        <div class="hidden w-full md:block md:w-auto">
+          <ul class="flex space-x-8">
+            <li class="py-5">
+              <a href="index.html" class="block font-semibold text-gray-700 group-hover:text-red-600" aria-current="page">Home</a>
+            </li>
+            <li class="group py-5">
+                <a href="about_company.html" class="flex items-center justify-between w-full text-red-600">About Us <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                    <ul class="text-gray-700 divide-y w-72 divide-slate-300">
+                      <li>
+                        <a href="about_company.html" class="block pl-6 pt-6 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Our Management</a>
+                      </li>
+                      <li>
+                        <a href="mission_values.html" class="block pl-6 py-2 text-red-600 hover:translate-x-1 transition ease-in-out">Phylosophy, Mission & Values</a>
+                      </li>
+                      <li>
+                        <a href="our_technology" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Our Technology</a>
+                      </li>
+                      <li>
+                        <a href="csr.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">CSR</a>
+                      </li>
+                      <li>
+                        <a href="awards.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Awards</a>
+                      </li>
+                      <li>
+                        <a href="hta_organization_structure.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">HTA Organization Structure</a>
+                      </li>
+                      <li>
+                        <a href="hta_group_structure.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">HTA Group Structure</a>
+                      </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="group py-5">
+                <a href="company-profile.html" class="flex items-center justify-between w-full text-gray-700 md:group-hover:text-red-600">Company Group <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                    <ul class="text-gray-700 w-[390px] divide-y divide-slate-300">
+                      <li>
+                        <a href="" class="flex items-center pt-6 pl-3 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-hta.svg" class="h-6"/>
+                          </div>
+                          <div>PT. High Tech Anchillaries Indonesia</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-ars.svg" class="h-6"/>
+                          </div>
+                          <div>PT. Arai Rubber Seal Indonesia</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-tta.svg" class="h-6"/>
+                          </div>
+                          <div>PT. Tri Tech Anchillaries Indonesia</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-dcm.png" class="h-6"/>
+                          </div>
+                          <div>PT. Dino Custom Mixing</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-rmu.png" class="h-6"/>
+                          </div>
+                          <div>PT. Raja Medika Utama</div>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="group py-5">
+              <a href="company-profile.html" class="flex items-center justify-between w-full text-gray-700 md:group-hover:text-red-600">Product Segment <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+              <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                  <ul class="text-gray-700 divide-y w-52 divide-slate-300">
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 pt-6 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Rubber Product</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Mold & Dies</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Metal & Spring</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Rubber Material</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Medical Devices</a>
+                    </li>
+                  </ul>
+              </div>
+            </li>
+            <li class="py-5">
+              <a href="news.html" class="block text-gray-700 md:hover:text-red-600">News</a>
+            </li>
+            <li class="py-5">
+              <a href="career.html" class="block text-gray-700 md:hover:text-red-600">Career</a>
+            </li>
+            <li class="py-5">
+              <a href="contact-us.html" class="px-6 py-2 bg-red-600 text-white hover:bg-red-700">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End:Navbar -->
+    <!-- Start:mobile Navbar -->
+    <div class="hidden flex flex-col fixed top-0 h-fit w-screen md:hidden bg-slate-800 z-50 text-gray-300 p-3 transition ease-in-out" id="mobileNavbar">
+      <button class="self-end buttonNavbar"><span class="bi bi-x-lg"></span></button>
+      <ul class="px-3">
+        <li><a href="index.html" class="py-2 block hover:text-red-600">Home</a></li>
+        <li>
+          <div class="flex justify-between items-center">
+            <div class="py-2 block w-full text-left text-red-600" id="dropdownAbout">About Us</div>
+            <span class="bi bi-chevron-down transition ease-out chevronAbout"></span>
+          </div>
+          <ul class="pl-2 hidden transition ease-in-out divide-y divide-gray-500" id="menuAbout">
+            <li><a href="hta-overview.html" class="py-1 block text-red-600">Our Management</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Phylosophy, Mission & Values</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Our Technology</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">CSR</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Awards</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">HTA Organization Structure</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">HTA Group Structure</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex justify-between items-center">
+            <div class="py-2 block w-full text-left hover:text-red-600" id="dropdownCompany">Company Group</div>
+            <span class="bi bi-chevron-down transition ease-out chevronCompany"></span>
+          </div>
+          <ul class="pl-2 hidden transition ease-in-out divide-y divide-gray-500" id="menuCompany">
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">PT. High Tech Anchillaries Indonesia</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">PT. Arai Rubber Seal Indonesia</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">PT. Tri Tech Anchillaries Indonesia</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">PT. Dino Custom Mixing</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">PT. Raja Medika Utama</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex justify-between items-center">
+            <div class="py-2 block w-full text-left hover:text-red-600" id="dropdownProduct">Product Segment</div>
+            <span class="bi bi-chevron-down transition ease-out chevronProduct"></span>
+          </div>
+          <ul class="pl-2 hidden transition ease-in-out divide-y divide-gray-500" id="menuProduct">
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Rubber Products</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Mold & Dies</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Metal & Spring</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Rubber Material</a></li>
+            <li><a href="hta-overview.html" class="py-1 block hover:text-red-600">Medical Devices</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html" class="py-2 block w-full hover:text-red-600">News</a></li>
+        <li><a href="career.html" class="py-2 block w-full hover:text-red-600">Career</a></li>
+        <li><a href="contact-us.html" class="py-2 block w-full hover:text-red-600">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- End:mobile Navbar -->
+
+    <section class="relative mt-10 md:mt-14 flex justify-center items-center w-full h-32 md:h-80 bg-cover bg-center bg-[url('./assets/illustrations/illustration-banner-company-profile.jpg')]" data-aos="zoom-in">
+      <div class="absolute opacity-75 z-0 w-full h-full bg-slate-900"></div>
+      <div class="text-2xl md:text-6xl text-white z-10 text-center">Phylosophy, Mission & Values</div>
+    </section>  
+
+    <!-- Start:Breadcrumb -->
+    <nav class="container flex w-full py-2 px-3 md:px-0 mx-auto mb-3 md:mb-6" aria-label="Breadcrumb" data-aos="fade-up">
+      <ol class="inline-flex flex-wrap items-center space-x-1 md:space-x-3">
+        <li>
+          <div class="flex items-center">
+            <a href="index.html" class="text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Home</a>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <span class="bi bi-chevron-right"></span>
+            <a href="about_company.html" class="ml-1 text-sm font-medium text-gray-800 md:ml-2 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">About Company</a>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <span class="bi bi-chevron-right"></span>
+            <span class="ml-1 text-sm font-medium text-red-600 md:ml-2 dark:text-gray-400">Phylosophy, Mission & Values</span>
+          </div>
+        </li>
+      </ol>
+    </nav>    
+    <!-- End:Breadcrumb -->
+    <section class="container mx-auto mb-3 md:mb-6 px-3 md:px-0">
+      <h1 class="text-slate-800 font-semibold text-2xl border-l-4 mb-3 border-l-red-600"><span class="ml-2">Company Culture</span></h1>
+      <div class="flex flex-col md:flex-row gap-3 items-center mb-6">
+        <div class="w-full md:w-3/4 ">
+          <p class="text-gray-600 mb-3">Corporate culture is the competitiveness of future enterprises, and corporate culture will be the driving force for future corporate development and is what we rely on for growth. For an enterprise to grow, it must have a corporate culture, and culture is the source of business operations. All companies are aware that market competition is not only economic competition, but also the game of corporate culture. A successful corporate culture is the intangible "real estate" of an enterprise. A successful corporate culture is a good humanistic environment. Once formed, it will inevitably produce a transformation from spirit to material, from the "virtual" to the "real". </p>
+          <div class="flex mb-3 gap-3 md:gap-5">
+            <div class="flex flex-col">
+              <h1 class="font-semibold md:text-xl text-gray-800">Business Phylosophy</h1>
+              <p class="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-semibold md:text-xl text-gray-800">Our Mission</h1>
+              <p class="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/4">
+          <img src="assets/illustrations/illustration-vission-mission-values.webp" class="object-cover brightness-50"/>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-3">
+        <div class="flex flex-col w-full md:w-3/4 mb-5">
+          <h1 class="font-semibold md:text-xl text-gray-800">Core Value</h1>
+          <p class="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <ul class="list-disc text-gray-600">
+            <li class="ml-8">Lorem epsum is simply dummy text of the printing</li>
+            <li class="ml-8">Lorem epsum is simply dummy text of the printing</li>
+            <li class="ml-8">Lorem epsum is simply dummy text of the printing</li>
+            <li class="ml-8">Lorem epsum is simply dummy text of the printing</li>
+            <li class="ml-8">Lorem epsum is simply dummy text of the printing</li>
+          </ul>
+        </div>
+        <div class="flex flex-col w-full md:w-1/4">
+          <h1 class="font-semibold md:text-xl text-gray-800 mb-3">DOWNLOAD</h1>
+          <a href="" class="py-2 px-6 w-full md:w-80 mb-5 bg-slate-50 border shadow-xl border-slate-200 hover:bg-red-600 hover:text-white"><span class="bi bi-file-bar-graph mr-2 hover:text-white"></span>REPORT FOR 2022</a>
+          <a href="" class="py-2 px-6 w-full md:w-80 mb-5 bg-slate-50 border shadow-xl border-slate-200 hover:bg-red-600 hover:text-white"><span class="bi bi-card-heading mr-2 hover:text-white"></span>OUR BROCURE</a>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Start:Footer -->
+    <footer class="bg-slate-800 grid grid-cols-1 gap-2 md:flex md:justify-around py-3 md:py-5 px-3 md:px-40 mb-11 md:mb-0" data-aos="fade-up">
+      <div class="hidden md:flex md:flex-col border-b border-slate-300 md:border-b-0">
+        <img src="./assets/logo/logo-main-footer.svg" class="h-16 mb-2"/>    
+        <div class="hidden md:block text-gray-200 text-sm md:font-light">Follow us on social media</div>     
+        <div class="hidden md:flex text-gray-300 gap-5 mb-2">
+          <a href="" class="bi text-lg md:text-2xl bi-facebook hover:text-red-600"></a>
+          <a href="" class="bi text-lg md:text-2xl bi-instagram hover:text-red-600"></a>
+          <a href="" class="bi text-lg md:text-2xl bi-linkedin hover:text-red-600"></a>
+        </div>
+        <p class="hidden md:block text-sm font-light text-gray-400">© 2022 HTA Indonesia Group. All right reserved</p>
+      </div>
+      <div class="col-span-1 pb-2 flex justify-between items-center md:hidden border-b border-slate-400">
+        <div class="flex gap-2 justify-start items-center">
+          <img src="./assets/logo/logo-hta.svg" alt="" class="h-8">
+          <div class="flex flex-col leading-none">
+            <div class="text-md md:text-2xl font-semibold text-red-600">Indonesia Group</div>
+            <div class="text-gray-100 text-xs md:text-sm">Quality is Our Identity</div>
+          </div>
+        </div>   
+        <div class="flex text-gray-300 gap-2">
+          <a href="" class="bi text-base bi-facebook hover:text-red-600"></a>
+          <a href="" class="bi text-base bi-instagram hover:text-red-600"></a>
+          <a href="" class="bi text-base bi-linkedin hover:text-red-600"></a>
+        </div>
+      </div>
+      
+      <div class="col-span-1 order-1 md:flex md:flex-col md:w-1/4 mb-3 md:mb-0">
+        <div class="text-white mb-1 md:mb-2">Products</div>
+        <div class="flex flex-wrap gap-2 md:gap-3 text-gray-300 text-sm">
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">Oil Seals</a>
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">O-Rings</a>
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">Valve Stem Seals</a>
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">Rubber Parts</a>
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">Metals & Springs</a>
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">Rubber Materials</a>
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">Mold & Dies</a>
+          <a href="" class="px-2 md:px-6 py-1 border border-slate-400 hover:bg-red-600 hover:border-red-600 hover:text-white">Medical Devices</a>
+        </div>
+      </div>
+      <div class="hidden order-2 md:flex md:flex-col">
+        <div class="text-white">Quick Links</div>
+        <ul class="text-gray-300 text-sm md:text-base pr-5">
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> Home</a></li>
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> Company Profile</a></li>
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> Products</a></li>
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> Our Technology</a></li>
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> CSR</a></li>
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> News</a></li>
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> Career</a></li>
+          <li><a href="" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="hidden order-3 md:flex md:flex-col">
+        <div class="text-white">Company Group</div>
+        <ul class="text-gray-300 text-sm md:text-base pr-5">
+          <li><a href="hta-overview.html" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> PT. High Tech Anchillaries Indonesia</a></li>
+          <li><a href="hta-overview.html" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> PT. Arai Rubber Seal Indonesia</a></li>
+          <li><a href="hta-overview.html" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> PT. Tri Tech Anchillaries Indonesia</a></li>
+          <li><a href="hta-overview.html" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> PT. Dino Custom Mixing</a></li>
+          <li><a href="hta-overview.html" class="hover:text-red-600 block hover:translate-x-1 transition ease-in-out"><span class="bi bi-chevron-right"></span> PT. Raja Medika Utama</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-span-1 order-4 md:hidden border-t border-slate-500 text-center pt-2">
+          <p class="text-xs font-light text-gray-400">© 2022 HTA Indonesia Group. All right reserved</p>
+      </div>
+    </footer>
+    <!-- End:Footer -->
+    <div class="md:hidden fixed bottom-0 w-full flex justify-around items-center bg-white py-2 border-t border-slate-400">
+      <a href="index.html" class="text-xl bi bi-house-door-fill text-red-600"></a>
+      <a href="company-profile.html" class="text-xl bi bi-buildings text-gray-700"></a>
+      <a href="products.html" class="text-xl bi bi-archive text-gray-700"></a>
+      <a href="career.html" class="text-xl bi bi-person-plus text-gray-700"></a>
+      <a href="contact-us.html" class="text-xl bi bi-telephone text-gray-700"></a>
+    </div>
+
+    <a href="#body" class="hidden fixed md:px-4 px-2 md:py-3 py-1 bg-red-500 text-white md:bottom-5 bottom-16 right-5 rounded-full hover:bg-red-600 active:bg-red-600" id="btnTop"><span class="bi bi-arrow-up"></span></a>
+    
+    <!-- Tailwind core JavaScript -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/script/tailwind.config.js"></script>
+    <script src="/assets/script/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Swiper -->
+    <script>
+      //Swiper Popular Product
+      var hiroSwiper = new Swiper(".hiroSwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".hiro-button-next",
+          prevEl: ".hiro-button-prev",
+        },
+        pagination: {
+          el: ".hiro-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+
+      // //Swiper Trusted by
+      // var trustedSwiper = new Swiper(".trustedSwiper", {
+      //   loop: true,
+      //   slidesPerView: 9,
+      //   spaceBetween:30,
+      //   freeMode: true,
+      //   autoplay: true
+      // });
+
+      //Swiper Popular Product
+      var popularSwiper = new Swiper(".popularSwiper", {
+        centeredSlides: true,
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+        },
+        navigation: {
+          nextEl: ".popular-button-next",
+          prevEl: ".popular-button-prev",
+        },
+        pagination: {
+          el: ".popular-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+
+      //Swiper Applications
+      $('#thums1').click(function() {
+        $('#str1').show();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums2').click(function() {
+        $('#str1').hide();
+        $('#str2').show();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums3').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').show();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums4').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').show();
+        $('#str5').hide();
+        $('#str6').hide();
+      });
+      $('#thums5').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').show();
+        $('#str6').hide();
+      });
+      $('#thums6').click(function() {
+        $('#str1').hide();
+        $('#str2').hide();
+        $('#str3').hide();
+        $('#str4').hide();
+        $('#str5').hide();
+        $('#str6').show();
+      });
+
+      var thumbSwiper = new Swiper(".thumbSwiper", {
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 4,
+            
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 4,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 6,
+          },
+        },
+        spaceBetween: 10,
+        freeMode: true,
+        watchSlidesProgress: true,
+        navigation: {
+          nextEl: ".application-button-next",
+          prevEl: ".application-button-prev",
+        },
+      });
+      var applicationSwiper = new Swiper(".applicationSwiper", {
+        spaceBetween: 10,
+        effect: "fade",
+        thumbs: {
+          swiper: thumbSwiper,
+        },
+      });
+
+      //Swiper Technology
+      var technologySwiper = new Swiper(".technologySwiper", {
+        slidesPerView: 1,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".technology-button-next",
+          prevEl: ".technology-button-prev",  
+        },
+      });
+
+      //Swiper Certificates
+      var certificateSwiper = new Swiper(".certificateSwiper", {
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          // when window width is >= 720px
+          720: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          // when window width is >= 1080px
+          1080: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        },
+        pagination: {
+          el: ".certificate-pagination",
+          clickable: true,
+        },
+        
+      });
+    </script>
+
+    <!-- Dropdown & Scrollbar -->
+    <script>
+      $(document).ready(function() {
+        //Mobile Menu
+        $('.buttonNavbar').click(function(e){
+          e.preventDefault();
+          $('#mobileNavbar').toggleClass('hidden');
+        })
+
+        $('#dropdownAbout').click(function(e){
+          e.stopPropagation();
+          $('#menuAbout').slideToggle();
+          $('.chevronAbout').toggleClass('rotate-180');
+        });
+
+        $('#dropdownCompany').click(function(e){
+          e.stopPropagation();
+          $('#menuCompany').slideToggle()
+          $('.chevronCompany').toggleClass('rotate-180')
+        });
+        $('#dropdownProduct').click(function(e){
+          e.stopPropagation();
+          $('#menuProduct').slideToggle()
+          $('.chevronProduct').toggleClass('rotate-180')
+        });
+      });
+
+      //Scrollbar
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+          $('#whiteNav').addClass('fixed top-0');
+        } else {
+          $('#whiteNav').removeClass('fixed top-0');
+        }
+        if (y > 300) {
+          $('#btnTop').fadeIn();
+        } else {
+          $('#btnTop').fadeOut();
+        }
+      });
+    </script>
+  </body>
+</html>
