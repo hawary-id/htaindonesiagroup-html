@@ -27,58 +27,124 @@
 
   <body id="body">
     <!-- Start:White Navbar -->
-    <nav class="fixed w-full bg-white z-50 top-0 shadow-lg transition ease-in-out py-1 md:py-0" data-aos="zoom-out">
-      <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
+    <nav class="fixed top-0 w-full bg-white z-50 shadow-xl py-1 md:py-0" data-aos="zoom-out">
+      <div class="flex flex-wrap items-center justify-between px-2 md:px-0 container mx-auto">
         <a href="index.html" class="flex items-center">
-            <img src="./assets/logo/logo-main-navbar.svg" class="h-8 md:h-10" alt="HTA Logo" />
+            <img src="./assets/logo/logo-main-navbar.svg" class="h-10 md:h-14" alt="HTA Logo" />
         </a>
         <button type="button" class="inline-flex items-center text-sm text-gray-500 md:hidden rounded-md hover:bg-gray-100 buttonNavbar">
           <span class="sr-only">Open main menu</span>
           <span class="bi bi-list text-2xl"></span>
         </button>
         <div class="hidden w-full md:block md:w-auto">
-          <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 bg-white">
-            <li class="py-4">
-              <a href="index.html" class="block text-gray-700 hover:text-red-600" aria-current="page">Home</a>
+          <ul class="flex space-x-8 text-gray-700">
+            <li class="py-5">
+              <a href="index.html" class="block hover:text-red-600" aria-current="page">Home</a>
             </li>
-            <li class="group py-4">
-                <a href="company-profile.html" class="flex items-center justify-between w-full text-red-600 md:group-hover:text-red-600">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
-                <div class="hidden bg-white shadow-lg w-fit fixed group-hover:flex">
-                    <ul class="text-gray-700 divide-y divide-slate-300">
+            <li class="group py-5">
+                <a href="about_company.html" class="flex items-center justify-between w-full md:group-hover:text-red-600">About Us <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                  <ul class="divide-y w-72 divide-slate-300">
+                    <li>
+                      <a href="about_company.html" class="block pl-6 pt-6 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Our Management</a>
+                    </li>
+                    <li>
+                      <a href="mission_values.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Phylosophy, Mission & Values</a>
+                    </li>
+                    <li>
+                      <a href="our_technology.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Our Technology</a>
+                    </li>
+                    <li>
+                      <a href="csr.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">CSR</a>
+                    </li>
+                    <li>
+                      <a href="awards.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Awards</a>
+                    </li>
+                    <li>
+                      <a href="hta_organization_structure.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">HTA Organization Structure</a>
+                    </li>
+                    <li>
+                      <a href="hta_group_structure.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">HTA Group Structure</a>
+                    </li>
+                  </ul>
+                </div>
+            </li>
+            <li class="group py-5">
+                <a href="company-profile.html" class="flex items-center justify-between w-full text-red-600 font-semibold group-hover:text-red-600">Company Group <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                    <ul class="text-gray-700 w-[390px] divide-y divide-slate-300">
                       <li>
-                        <a href="hta-overview.html" class="block px-4 pt-5 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. High Tech Anchillaries Indonesia</a>
+                        <a href="" class="flex items-center pt-6 pl-3 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-hta.svg" class="h-6"/>
+                          </div>
+                          <div>PT. High Tech Anchillaries Indonesia</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Arai Rubber Seal Indonesia</a>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-ars.svg" class="h-6"/>
+                          </div>
+                          <div>PT. Arai Rubber Seal Indonesia</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Tri Tech Anchillaries Indonesia</a>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-tta.svg" class="h-6"/>
+                          </div>
+                          <div>PT. Tri Tech Anchillaries Indonesia</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Dino Custom Mixing</a>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-dcm.png" class="h-6"/>
+                          </div>
+                          <div>PT. Dino Custom Mixing</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Raja Medika Utama</a>
+                        <a href="" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-rmu.png" class="h-6"/>
+                          </div>
+                          <div>PT. Raja Medika Utama</div>
+                        </a>
                       </li>
                     </ul>
                 </div>
             </li>
-            <li class="py-4">
-              <a href="products.html" class="block text-gray-700 md:hover:text-red-600">Products</a>
+            <li class="group py-5">
+              <a href="company-profile.html" class="flex items-center justify-between w-full text-gray-700 md:group-hover:text-red-600">Product Segment <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+              <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                  <ul class="text-gray-700 divide-y w-52 divide-slate-300">
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 pt-6 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Rubber Product</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Mold & Dies</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Metal & Spring</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Rubber Material</a>
+                    </li>
+                    <li>
+                      <a href="hta-overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Medical Devices</a>
+                    </li>
+                  </ul>
+              </div>
             </li>
-            <li class="py-4">
-              <a href="our-technology.html" class="block text-gray-700 md:hover:text-red-600">Our Technology</a>
-            </li>
-            <li class="py-4">
-              <a href="csr.html" class="block text-gray-700 md:hover:text-red-600">CSR</a>
-            </li>
-            <li class="py-4">
+            <li class="py-5">
               <a href="news.html" class="block text-gray-700 md:hover:text-red-600">News</a>
             </li>
-            <li class="py-4">
+            <li class="py-5">
               <a href="career.html" class="block text-gray-700 md:hover:text-red-600">Career</a>
             </li>
-            <li class="py-4">
+            <li class="py-5">
               <a href="contact-us.html" class="px-6 py-2 bg-red-600 text-white hover:bg-red-700">Contact Us</a>
             </li>
           </ul>
@@ -118,38 +184,36 @@
     <!-- Start:Banner -->
     <section class="relative mt-10 md:mt-14 flex justify-center items-center w-full h-32 md:h-80 bg-cover bg-center bg-[url('./assets/illustrations/illustration-banner-company-profile.jpg')]" data-aos="zoom-in">
       <div class="absolute opacity-75 z-0 w-full h-full bg-slate-900"></div>
-      <div class="text-2xl md:text-6xl text-white z-10 text-center">Company Profile</div>
+      <div class="text-2xl md:text-6xl text-white z-10 text-center">Company Group</div>
     </section>
     <!-- End:Banner -->
-
+    <!-- Start:Breadcrumb -->
+    <nav class="container flex w-full py-2 px-3 md:px-0 mx-auto mb-3 md:mb-6" aria-label="Breadcrumb" data-aos="fade-up">
+      <ol class="inline-flex flex-wrap items-center space-x-1 md:space-x-3">
+        <li>
+          <div class="flex items-center">
+            <a href="index.html" class="text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Home</a>
+          </div>
+        </li>
+    
+        <li>
+          <div class="flex items-center">
+            <span class="bi bi-chevron-right"></span>
+            <span class="ml-1 text-sm font-medium text-red-600 md:ml-2 dark:text-gray-400">Company Group</span>
+          </div>
+        </li>
+      </ol>
+    </nav>    
+    <!-- End:Breadcrumb -->
+    
+    <!-- Title -->
+    <div class="container mx-auto px-3 md:px-0 mb-3 md:mb-6" data-aos="fade-up">
+      <h1 class="text-slate-800 font-semibold text-lg md:text-2xl border-l-4 mb-3 border-l-red-600"><span class="ml-2">Company Group</span></h1>
+    </div>
+    <!-- Title -->
     <!-- Start:Content -->
-    <section class="w-full px-3 md:px-32 mb-10">
-      <!-- Start:Breadcrumb -->
-      <nav class="flex w-full py-2 md:py-3 mb-2" aria-label="Breadcrumb" data-aos="fade-up">
-        <ol class="inline-flex flex-wrap items-center space-x-1 md:space-x-3">
-          <li>
-            <div class="flex items-center">
-              <a href="index.html" class="text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Home</a>
-            </div>
-          </li>
-          <li>
-            <div class="flex items-center">
-              <span class="bi bi-chevron-right"></span>
-              <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Company Profile</span>
-            </div>
-          </li>
-        </ol>
-      </nav>    
-      <!-- End:Breadcrumb -->
-
-      <!-- Start:Header -->
-      <div class="flex flex-col mb-3 md:mb-5" data-aos="fade-up">
-        <div class="text-xl md:text-3xl w-fit mb-1 md:mb-2 text-slate-900">Company Profile</div>
-        <div class="border border-b-2 border-red-600 w-10 md:w-20 mb-3 md:mb-5"></div>
-        <div class="text-base text-slate-600 mb-2 indent-8 text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",</div>
-      </div>
-      <!-- End:Header -->
-
+    <section class="container mx-auto w-full px-3 md:px-0 mb-10">
+      <div class="text-base text-slate-600 mb-2 indent-8 text-justify" data-aos="fade-up">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",</div>
       <!-- Start:Company List -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8">
         <a href="hta-overview.html" class="relative flex flex-col justify-center items-center gap-3 border bg-white border-slate-400 h-52 md:h-72 px-3 md:px-5 mb-8 md:mb-6 group hover:border-red-600" data-aos="fade-up" data-aos-delay="100">

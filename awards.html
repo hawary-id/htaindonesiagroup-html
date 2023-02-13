@@ -39,10 +39,10 @@
         <div class="hidden w-full md:block md:w-auto">
           <ul class="flex space-x-8">
             <li class="py-5">
-              <a href="index.html" class="block text-gray-700 group-hover:text-red-600" aria-current="page">Home</a>
+              <a href="index.html" class="block font-semibold text-gray-700 group-hover:text-red-600" aria-current="page">Home</a>
             </li>
             <li class="group py-5">
-                <a href="about_company.html" class="flex items-center font-semibold justify-between w-full text-red-600">About Us <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                <a href="about_company.html" class="flex items-center justify-between w-full text-red-600">About Us <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
                 <div class="hidden bg-white shadow-lg fixed group-hover:flex">
                     <ul class="text-gray-700 divide-y w-72 divide-slate-300">
                       <li>
@@ -58,7 +58,7 @@
                         <a href="csr.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">CSR</a>
                       </li>
                       <li>
-                        <a href="awards.html" class="block pl-6 py-2 font-semibold text-red-600 hover:translate-x-1 transition ease-in-out">Awards</a>
+                        <a href="awards.html" class="block pl-6 py-2 text-red-600 hover:translate-x-1 transition ease-in-out">Awards</a>
                       </li>
                       <li>
                         <a href="hta_organization_structure.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">HTA Organization Structure</a>
@@ -217,76 +217,131 @@
       <h1 class="text-slate-800 font-semibold text-lg md:text-2xl border-l-4 mb-3 border-l-red-600"><span class="ml-2">Awards</span></h1>
     </div>
     <!-- End:Header -->
-
     <!-- Start:Content -->
-    <section class="container mx-auto mb-3 md:mb-6 px-3 md:px-0" data-aos="fade-up">
-      <div class="block py-2 pl-3 mb-3 border border-slate-300 text-gray-600 font-semibold text-lg hover:text-red-600 cursor-pointer" id="awardButton">
-        <span class="bi bi-plus bi-dash transition ease-in-out" id="biPlus"></span> 2022
+    <section class="px-3 md:px-0 container mx-auto mb-10">
+      <div class="flex items-center py-2 mb-3 border border-slate-300 pl-3 cursor-pointer text-gray-800 text-xl hover:text-red-600" id="awardYear">
+        <span class="bi bi-plus bi-dash" id="awardPlus"> 2022</span>
       </div>
-      <div class="hidden awardMenu" id="awardMenu">
-        <div class="md:grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-5 py-3 target:hidden">
-          <div class="relative flex flex-col items-center bg-[url('assets/illustrations/illustration-vss-application.webp')] h-56 bg-cover group mb-10 cursor-pointer">
-            <div class="absolute transition ease-in-out inset-0 bg-slate-800 flex justify-center items-center opacity-0 group-hover:opacity-75">
-              <p class="text-sm text-gray-50 text-center">Lorem Epsum is simply</p>
+      <div class="hidden" id="awardList">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6 py-3">
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
             </div>
-            <div class="absolute bottom-0 flex flex-col mx-3 bg-white px-10 py-3 border border-slate-300 translate-y-6 md:translate-y-8 cursor-pointer group-hover:bg-red-600">
-              <div class="text-red-600 font-medium uppercase text-center group-hover:text-white">Kategori Terpopuler</div>
-              <div class="hidden md:block text-gray-600 text-center group-hover:text-gray-300">PR Indonesia Award 2022</div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+  
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+  
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+  
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="block py-2 pl-3 mb-3 border border-slate-300 text-gray-600 font-semibold text-lg hover:text-red-600 cursor-pointer" id="awardButton2">
-        <span class="bi bi-plus bi-dash transition ease-in-out" id="biPlus2"></span> 2021
+      <div class="flex items-center py-2 mb-3 border border-slate-300 pl-3 cursor-pointer text-gray-800 text-xl hover:text-red-600" id="awardYear2">
+        <span class="bi bi-plus bi-dash" id="awardPlus2"> 2021</span>
       </div>
-      <div class="hidden awardMenu" id="awardMenu2">
-        <div class="md:grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-5 py-3 target:hidden">
-          <div class="relative flex flex-col items-center bg-[url('assets/illustrations/illustration-vss-application.webp')] h-56 bg-cover group mb-10 cursor-pointer">
-            <div class="absolute transition ease-in-out inset-0 bg-slate-800 flex justify-center items-center opacity-0 group-hover:opacity-75">
-              <p class="text-sm text-gray-50 text-center">Lorem Epsum is simply</p>
+      <div class="hidden" id="awardList2">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6 py-3">
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
             </div>
-            <div class="absolute bottom-0 flex flex-col mx-3 bg-white px-10 py-3 border border-slate-300 translate-y-6 md:translate-y-8 cursor-pointer group-hover:bg-red-600">
-              <div class="text-red-600 font-medium uppercase text-center group-hover:text-white">Kategori Terpopuler</div>
-              <div class="hidden md:block text-gray-600 text-center group-hover:text-gray-300">PR Indonesia Award 2022</div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+  
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+  
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+  
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
+            </div>
+          </div>
+          <div class="relative flex flex-col justify-center items-center cursor-pointer group mb-8">
+            <img src="./assets/awards/award.jpg" class="h-52 md:h-60 w-full object-cover"/>
+            <div class="absolute flex justify-center items-center inset-0 bg-slate-800 opacity-0 transition ease-in-out group-hover:opacity-80">
+              <p class="text-sm text-white">Lorem Epsum is simply</p>
+            </div>
+            <div class="absolute bottom-0 bg-white px-8 py-2 flex flex-col border border-slate-300 translate-y-5 md:translate-y-8 group-hover:bg-red-600">
+              <div class="font-semibold text-red-600 text-center uppercase group-hover:text-white">TERPOPULER 2022</div>
+              <div class="text-gray-500 text-center hidden md:block group-hover:text-gray-300">Lorem Epsum is simply</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="block py-2 pl-3 mb-3 border border-slate-300 text-gray-600 font-semibold text-lg hover:text-red-600 cursor-pointer" id="awardButton3">
-        <span class="bi bi-plus bi-dash transition ease-in-out" id="biPlus3"></span> 2020
-      </div>
-      <div class="hidden awardMenu" id="awardMenu3">
-        <div class="md:grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-5 py-3 target:hidden">
-          <div class="relative flex flex-col items-center bg-[url('assets/illustrations/illustration-vss-application.webp')] h-56 bg-cover group mb-10 cursor-pointer">
-            <div class="absolute transition ease-in-out inset-0 bg-slate-800 flex justify-center items-center opacity-0 group-hover:opacity-75">
-              <p class="text-sm text-gray-50 text-center">Lorem Epsum is simply</p>
-            </div>
-            <div class="absolute bottom-0 flex flex-col mx-3 bg-white px-10 py-3 border border-slate-300 translate-y-6 md:translate-y-8 cursor-pointer group-hover:bg-red-600">
-              <div class="text-red-600 font-medium uppercase text-center group-hover:text-white">Kategori Terpopuler</div>
-              <div class="hidden md:block text-gray-600 text-center group-hover:text-gray-300">PR Indonesia Award 2022</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="block py-2 pl-3 mb-3 border border-slate-300 text-gray-600 font-semibold text-lg hover:text-red-600 cursor-pointer" id="awardButton4">
-        <span class="bi bi-plus bi-dash transition ease-in-out" id="biPlus4"></span> 2019
-      </div>
-      <div class="hidden awardMenu" id="awardMenu4">
-        <div class="md:grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-5 py-3 target:hidden">
-          <div class="relative flex flex-col items-center bg-[url('assets/illustrations/illustration-vss-application.webp')] h-56 bg-cover group mb-10 cursor-pointer">
-            <div class="absolute transition ease-in-out inset-0 bg-slate-800 flex justify-center items-center opacity-0 group-hover:opacity-75">
-              <p class="text-sm text-gray-50 text-center">Lorem Epsum is simply</p>
-            </div>
-            <div class="absolute bottom-0 flex flex-col mx-3 bg-white px-10 py-3 border border-slate-300 translate-y-6 md:translate-y-8 cursor-pointer group-hover:bg-red-600">
-              <div class="text-red-600 font-medium uppercase text-center group-hover:text-white">Kategori Terpopuler</div>
-              <div class="hidden md:block text-gray-600 text-center group-hover:text-gray-300">PR Indonesia Award 2022</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </section>
     <!-- End:Content -->
 
@@ -410,30 +465,17 @@
           $('.dropdownChevron').toggleClass('rotate-180')
         });
 
-        $('#awardButton').click(function(e) {
+        $('#awardYear').click(function(e){
           e.preventDefault();
-          $('#awardMenu').slideToggle();
-          $('#biPlus').toggleClass('bi-plus');
+          $('#awardPlus').toggleClass('bi-plus');
+          $('#awardList').slideToggle();
         });
 
-        $('#awardButton2').click(function(e) {
+        $('#awardYear2').click(function(e){
           e.preventDefault();
-          $('#awardMenu2').slideToggle();
-          $('#biPlus2').toggleClass('bi-plus');
-        });
-
-        $('#awardButton3').click(function(e) {
-          e.preventDefault();
-          $('#awardMenu3').slideToggle();
-          $('#biPlus3').toggleClass('bi-plus');
-        });
-
-        $('#awardButton4').click(function(e) {
-          e.preventDefault();
-          $('#awardMenu4').slideToggle();
-          $('#biPlus4').toggleClass('bi-plus');
-        });
-        
+          $('#awardPlus2').toggleClass('bi-plus');
+          $('#awardList2').slideToggle();
+        })
       });
 
       //Scrollbar
