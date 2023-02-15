@@ -26,94 +26,183 @@
   </head>
 
   <body id="body">
-    <!-- Start:White Navbar -->
-    <nav class="fixed w-full bg-white z-50 top-0 shadow-lg transition ease-in-out py-1 md:py-0" data-aos="zoom-out">
-      <div class="flex flex-wrap items-center justify-between px-2 md:px-32">
+    <nav class="fixed top-0 w-full bg-white z-50 shadow-xl py-1 md:py-0" data-aos="zoom-out">
+      <div class="flex flex-wrap items-center justify-between px-2 md:px-0 container mx-auto">
         <a href="index.html" class="flex items-center">
-            <img src="./assets/logo/logo-main-navbar.svg" class="h-8 md:h-10" alt="HTA Logo" />
+            <img src="./assets/logo/logo-main-navbar.svg" class="h-10 md:h-14" alt="HTA Logo" />
         </a>
         <button type="button" class="inline-flex items-center text-sm text-gray-500 md:hidden rounded-md hover:bg-gray-100 buttonNavbar">
           <span class="sr-only">Open main menu</span>
           <span class="bi bi-list text-2xl"></span>
         </button>
         <div class="hidden w-full md:block md:w-auto">
-          <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 bg-white">
-            <li class="py-4">
-              <a href="index.html" class="block text-gray-700 hover:text-red-600" aria-current="page">Home</a>
+          <ul class="flex space-x-8 text-gray-700">
+            <li class="py-5">
+              <a href="index.html" class="block hover:text-red-600" aria-current="page">Home</a>
             </li>
-            <li class="group py-4">
-                <a href="company-profile.html" class="flex items-center justify-between w-full text-red-600 md:group-hover:text-red-600">Company Profile <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
-                <div class="hidden bg-white shadow-lg w-fit fixed group-hover:flex">
-                    <ul class="text-gray-700 divide-y divide-slate-300">
+            <li class="group py-5">
+                <a href="about_company.html" class="flex items-center justify-between w-full md:group-hover:text-red-600">About Us <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                  <ul class="divide-y w-72 divide-slate-300">
+                    <li>
+                      <a href="about_company.html" class="block pl-6 pt-6 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Our Management</a>
+                    </li>
+                    <li>
+                      <a href="mission_values.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Phylosophy, Mission & Values</a>
+                    </li>
+                    <li>
+                      <a href="our_technology.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Our Technology</a>
+                    </li>
+                    <li>
+                      <a href="csr.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">CSR</a>
+                    </li>
+                    <li>
+                      <a href="awards.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Awards</a>
+                    </li>
+                    <li>
+                      <a href="hta_organization_structure.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">HTA Organization Structure</a>
+                    </li>
+                    <li>
+                      <a href="hta_group_structure.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">HTA Group Structure</a>
+                    </li>
+                  </ul>
+                </div>
+            </li>
+            <li class="group py-5">
+                <a href="company_group.html" class="flex items-center justify-between w-full font-semibold text-red-600">Company Group <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+                <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                    <ul class="text-gray-700 w-[390px] divide-y divide-slate-300">
                       <li>
-                        <a href="hta-overview.html" class="block px-4 pt-5 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. High Tech Anchillaries Indonesia</a>
+                        <a href="hta_overview.html" class="flex items-center pt-6 pl-3 pb-2 font-semibold text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-hta.svg" class="h-6"/>
+                          </div>
+                          <div>PT. High Tech Anchillaries Indonesia</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Arai Rubber Seal Indonesia</a>
+                        <a href="hta_overview.html" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-ars.svg" class="h-6"/>
+                          </div>
+                          <div>PT. Arai Rubber Seal Indonesia</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Tri Tech Anchillaries Indonesia</a>
+                        <a href="hta_overview.html" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-tta.svg" class="h-6"/>
+                          </div>
+                          <div>PT. Tri Tech Anchillaries Indonesia</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Dino Custom Mixing</a>
+                        <a href="hta_overview.html" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-dcm.png" class="h-6"/>
+                          </div>
+                          <div>PT. Dino Custom Mixing</div>
+                        </a>
                       </li>
                       <li>
-                        <a href="hta-overview.html" class="block px-4 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">PT. Raja Medika Utama</a>
+                        <a href="hta_overview.html" class="flex items-center pl-3 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">
+                          <div class="flex w-16 justify-center items-center">
+                            <img src="./assets/logo/logo-rmu.png" class="h-6"/>
+                          </div>
+                          <div>PT. Raja Medika Utama</div>
+                        </a>
                       </li>
                     </ul>
                 </div>
             </li>
-            <li class="py-4">
-              <a href="products.html" class="block text-gray-700 md:hover:text-red-600">Products</a>
+            <li class="group py-5">
+              <a href="company_group.html" class="flex items-center justify-between w-full text-gray-700 md:group-hover:text-red-600">Product Segment <span class="bi bi-chevron-down transition ease-in-out ml-1 group-hover:rotate-180"></a> 
+              <div class="hidden bg-white shadow-lg fixed group-hover:flex">
+                  <ul class="text-gray-700 divide-y w-52 divide-slate-300">
+                    <li>
+                      <a href="hta_overview.html" class="block pl-6 pt-6 pb-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Rubber Product</a>
+                    </li>
+                    <li>
+                      <a href="hta_overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Mold & Dies</a>
+                    </li>
+                    <li>
+                      <a href="hta_overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Metal & Spring</a>
+                    </li>
+                    <li>
+                      <a href="hta_overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Rubber Material</a>
+                    </li>
+                    <li>
+                      <a href="hta_overview.html" class="block pl-6 py-2 hover:text-red-600 hover:translate-x-1 transition ease-in-out">Medical Devices</a>
+                    </li>
+                  </ul>
+              </div>
             </li>
-            <li class="py-4">
-              <a href="our-technology.html" class="block text-gray-700 md:hover:text-red-600">Our Technology</a>
-            </li>
-            <li class="py-4">
-              <a href="csr.html" class="block text-gray-700 md:hover:text-red-600">CSR</a>
-            </li>
-            <li class="py-4">
+            <li class="py-5">
               <a href="news.html" class="block text-gray-700 md:hover:text-red-600">News</a>
             </li>
-            <li class="py-4">
+            <li class="py-5">
               <a href="career.html" class="block text-gray-700 md:hover:text-red-600">Career</a>
             </li>
-            <li class="py-4">
+            <li class="py-5">
               <a href="contact-us.html" class="px-6 py-2 bg-red-600 text-white hover:bg-red-700">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End:White Navbar -->
-
+    <!-- End:Navbar -->
     <!-- Start:mobile Navbar -->
-    <div class="hidden fixed flex top-0 flex-col h-fit w-screen md:hidden bg-slate-800 z-50 text-base text-slate-300 px-3 py-2 transition ease-in-out" id="mobileNavbar">
+    <div class="hidden flex flex-col fixed top-0 h-fit w-screen md:hidden bg-slate-800 z-50 text-base text-gray-300 p-3 transition ease-in-out" id="mobileNavbar">
       <button class="self-end buttonNavbar"><span class="bi bi-x-lg"></span></button>
       <ul class="px-3">
-        <li><a href="index.html" class="py-2 block text-red-500 hover:text-red-500">Home</a></li>
+        <li><a href="index.html" class="py-2 block text-red-600 hover:text-red-600">Home</a></li>
         <li>
-          <div class="block">
-            <button class="py-2 block w-full text-left hover:text-red-500" id="buttonDropdown">Company Profile <span class="bi bi-chevron-down transition ease-out dropdownChevron"></span></button>
+          <div class="flex justify-between items-center">
+            <div class="py-2 block w-full text-left hover:text-red-600" id="dropdownAbout">About Us</div>
+            <span class="bi bi-chevron-down transition ease-out chevronAbout"></span>
           </div>
-          <ul class="pl-2 hidden transition ease-in-out" id="menuDropdown">
-            <li><a href="hta-overview.html" class="py-1 block hover:text-red-500">PT. High Tech Anchillaries Indonesia</a></li>
-            <li><a href="hta-overview.html" class="py-1 block hover:text-red-500">PT. Arai Rubber Seal Indonesia</a></li>
-            <li><a href="hta-overview.html" class="py-1 block hover:text-red-500">PT. Tri Tech Anchillaries Indonesia</a></li>
-            <li><a href="hta-overview.html" class="py-1 block hover:text-red-500">PT. Dino Custom Mixing</a></li>
-            <li><a href="hta-overview.html" class="py-1 block hover:text-red-500">PT. Raja Medika Utama</a></li>
+          <ul class="pl-2 hidden transition ease-in-out divide-y divide-gray-500" id="menuAbout">
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Our Management</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Phylosophy, Mission & Values</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Our Technology</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">CSR</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Awards</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">HTA Organization Structure</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">HTA Group Structure</a></li>
           </ul>
-
         </li>
-        <li><a href="products.html" class="py-2 block w-full hover:text-red-500">Products</a></li>
-        <li><a href="our-technology.html" class="py-2 block w-full hover:text-red-500">Our Technology</a></li>
-        <li><a href="csr.html" class="py-2 block w-full hover:text-red-500">CSR</a></li>
-        <li><a href="news.html" class="py-2 block w-full hover:text-red-500">News</a></li>
-        <li><a href="career.html" class="py-2 block w-full hover:text-red-500">Career</a></li>
-        <li><a href="contact-us.html" class="py-2 block w-full hover:text-red-500">Contact Us</a></li>
+        <li>
+          <div class="flex justify-between items-center">
+            <div class="py-2 block w-full text-left hover:text-red-600" id="dropdownCompany">Company Group</div>
+            <span class="bi bi-chevron-down transition ease-out chevronCompany"></span>
+          </div>
+          <ul class="pl-2 hidden transition ease-in-out divide-y divide-gray-500" id="menuCompany">
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">PT. High Tech Anchillaries Indonesia</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">PT. Arai Rubber Seal Indonesia</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">PT. Tri Tech Anchillaries Indonesia</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">PT. Dino Custom Mixing</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">PT. Raja Medika Utama</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex justify-between items-center">
+            <div class="py-2 block w-full text-left hover:text-red-600" id="dropdownProduct">Product Segment</div>
+            <span class="bi bi-chevron-down transition ease-out chevronProduct"></span>
+          </div>
+          <ul class="pl-2 hidden transition ease-in-out divide-y divide-gray-500" id="menuProduct">
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Rubber Products</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Mold & Dies</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Metal & Spring</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Rubber Material</a></li>
+            <li><a href="hta_overview.html" class="py-1 block hover:text-red-600">Medical Devices</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html" class="py-2 block w-full hover:text-red-600">News</a></li>
+        <li><a href="career.html" class="py-2 block w-full hover:text-red-600">Career</a></li>
+        <li><a href="contact-us.html" class="py-2 block w-full hover:text-red-600">Contact Us</a></li>
       </ul>
     </div>
-    <!-- End:mobile Navbar -->   
+    <!-- End:mobile Navbar -->
     
     <!-- Start:Banner -->
     <section class="relative mt-10 md:mt-14 flex justify-center items-center w-full h-32 md:h-80 bg-cover bg-center bg-[url('./assets/illustrations/illustration-banner-company-profile.jpg')]" data-aos="zoom-in">
@@ -123,7 +212,7 @@
     <!-- End:Banner -->
   
     <!-- Start:Content -->
-    <section class="w-full px-3 md:px-32 mb-5">
+    <section class="container mx-auto w-full px-3 md:px-0 mb-5">
       <!-- Start:Breadcrumb -->
       <nav class="flex w-full py-2 md:py-3 mb-2" aria-label="Breadcrumb" data-aos="fade-up">
         <ol class="inline-flex flex-wrap items-center space-x-1 md:space-x-3">
@@ -135,13 +224,13 @@
           <li>
             <div class="flex items-center">
               <span class="bi bi-chevron-right"></span>
-              <a href="company-profile.html" class="ml-1 md:ml-2 text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Company Profile</a>
+              <a href="company_group.html" class="ml-1 md:ml-2 text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">Company Profile</a>
             </div>
           </li>
           <li>
             <div class="flex items-center">
               <span class="bi bi-chevron-right"></span>
-              <a href="hta-overview.html" class="ml-1 md:ml-2 text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">PT. High Tech Anchillaries Indoneisa</a>
+              <a href="hta_overview.html" class="ml-1 md:ml-2 text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">PT. High Tech Anchillaries Indoneisa</a>
             </div>
           </li>
           <li>
@@ -162,77 +251,58 @@
       <!-- End:Header -->
 
       <!-- Start:Tab Menu -->
-      <div class="flex flex-wrap text-slate-700 text-base md:text-lg divide-x divide-slate-300 w-full items-center mb-5" data-aos="fade-up">
-        <a href="hta-overview.html" class="pr-4 md:pr-6 hover:text-red-600">Overview</a>
-        <a href="hta-culture.html" class="px-4 md:px-6 hover:text-red-600">Our Culture</a>
-        <a href="hta-technology.html" class="px-4 md:px-6 hover:text-red-600">Technology</a>
-        <a href="hta-products.html" class="px-4 md:px-6 font-semibold text-red-600 hover:text-red-600">Products</a>
-        <a href="hta-contact.html" class="px-4 md:px-6 hover:text-red-600">Contact Us</a>
+      <div class="flex flex-wrap text-gray-900 text-base md:text-lg divide-x divide-slate-300 w-full items-center mb-5" data-aos="fade-up">
+        <a href="hta_overview.html" class="pr-4 md:pr-6 hover:text-red-600">Company Profile</a>
+        <a href="hta-products.html" class="px-4 md:px-6 font-semibold text-red-600">Products</a>
+        <a href="hta-products.html" class="px-4 md:px-6 hover:text-red-600">Facility</a>
+        <a href="hta-products.html" class="px-4 md:px-6 hover:text-red-600">Certifications</a>
+        <a href="hta-contact.html" class="px-4 md:px-6 hover:text-red-600">Contact Information</a>
       </div>
       <!-- End:Tab Menu -->
 
-      <div class="flex flex-col">
-        <div class="flex">
-          <div class="hidden sticky top-14 h-full md:flex flex-col w-1/6" data-aos="fade-up">
-            <div class="bg-red-600 text-white pl-3 py-2">Products</div>
-              <ul class="flex flex-col divide-y divide-slate-300 text-slate-800 font-normal">
-                <li class="py-2 border-l-4 border-red-600"><a href="" class="pl-3 text-red-600 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">All</a></li>
-                <li class="py-2"><a href="" class="pl-3 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">Oil Seals</a></li>
-                <li class="py-2"><a href="" class="pl-3 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">O-Rings</a></li>
-                <li class="py-2"><a href="" class="pl-3 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">Valve Stem Seals</a></li>
-                <li class="py-2"><a href="" class="pl-3 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">Rubber Parts</a></li>
-                <li class="py-2"><a href="" class="pl-3 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">Metal & Springs</a></li>
-                <li class="py-2"><a href="" class="pl-3 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">Rubber Materials</a></li>
-                <li class="py-2"><a href="" class="pl-3 hover:text-red-600 hover:translate-x-2 transition ease-in-out block">Medical Devices</a></li>
-              </ul>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <a href="products-detail.html" class="flex flex-col group">
+          <div class="relative h-40 md:h-64 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/products/type-oil-seals.webp" class="h-56 group-hover:scale-110 transition ease-in-out"/>
+            <div class="absolute inset-0 bg-slate-900 opacity-50 scale-0 group-hover:scale-100 transition ease-in-out"></div>
           </div>
-          <div class="grow">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 py-5 md:pl-5 md:border-l md:border-slate-300" data-aos="fade-left">
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
-                <img src="./assets/Products/Oil-Seal.jpg" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">Oil Seals</div>
-              </a>
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
-                <img src="./assets/Products/O-Rings-Black.webp" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">O-Rings</div>
-              </a>
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
-                <img src="./assets/Products/Joint-carburetor.jpg" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">Joint Carburetors</div>
-              </a>
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
-                <img src="./assets/Products/Valve-Stem-Seal.jpg" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">Valve Stem Seals</div>
-              </a>
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="500">
-                <img src="./assets/Products/metals.jpg" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">Metal & SPrings</div>
-              </a>
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="600">
-                <img src="./assets/Products/mold-dies.jpg" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">Mold & Dies</div>
-              </a>
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="700">
-                <img src="./assets/Products/rubber-materials.jpg" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">Rubber Sheet Materials</div>
-              </a>
-              <a href="" class="col-span-1 flex flex-col justify-center items-center w-full h-fit overflow-hidden group" data-aos="fade-up" data-aos-delay="800">
-                <img src="./assets/Products/medical-devices.webp" class="h-28 md:h-48 p-2 group-hover:scale-125 transition ease-in-ou duration-300" alt="">
-                <div class="text-slate-600 text-lg text-center md:text-xl py-1 md:py-3 group-hover:text-red-600">Medical Stethoscope</div>
-              </a>
-            </div>
-            <ul class="flex justify-end" data-aos="fade-up">
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-slate-100 text-slate-400 border border-slate-300"><span class="bi bi-chevron-left"></span></a></li>
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-red-600 text-white border border-red-600">1</a></li>
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-white text-slate-600 border border-slate-300 hover:bg-red-600 hover:border-red-600 hover:text-white">2</a></li>
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-white text-slate-600 border border-slate-300 hover:bg-red-600 hover:border-red-600 hover:text-white">3</a></li>
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-white text-slate-600 border border-slate-300 hover:bg-red-600 hover:border-red-600 hover:text-white">4</a></li>
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-white text-slate-600 border border-slate-300 hover:bg-red-600 hover:border-red-600 hover:text-white">5</a></li>
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-white text-slate-600 border border-slate-300 hover:bg-red-600 hover:border-red-600 hover:text-white">6</a></li>
-              <li><a href="" class="w-10 py-1 inline-block text-center bg-white text-slate-600 border border-slate-300 hover:bg-red-600 hover:border-red-600 hover:text-white"><span class="bi bi-chevron-right"></span></a></li>
-            </ul>
+          <div class="text-gray-800 font-semibold py-2 text-lg md:text-xl text-center group-hover:bg-red-600 group-hover:text-white">Oil Seals</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group">
+          <div class="relative h-40 md:h-64 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/products/type-o-rings.webp" class="h-56 group-hover:scale-110 transition ease-in-out"/>
+            <div class="absolute inset-0 bg-slate-900 opacity-50 scale-0 group-hover:scale-100 transition ease-in-out"></div>
           </div>
-        </div>
+          <div class="text-gray-800 font-semibold py-2 text-lg md:text-xl text-center group-hover:bg-red-600 group-hover:text-white">O-Rings</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group">
+          <div class="relative h-40 md:h-64 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/products/type-vss.webp" class="h-56 group-hover:scale-110 transition ease-in-out"/>
+            <div class="absolute inset-0 bg-slate-900 opacity-50 scale-0 group-hover:scale-100 transition ease-in-out"></div>
+          </div>
+          <div class="text-gray-800 font-semibold py-2 text-lg md:text-xl text-center group-hover:bg-red-600 group-hover:text-white">Valve Stem Seals</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group">
+          <div class="relative h-40 md:h-64 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/products/type-gasket.webp" class="h-56 group-hover:scale-110 transition ease-in-out"/>
+            <div class="absolute inset-0 bg-slate-900 opacity-50 scale-0 group-hover:scale-100 transition ease-in-out"></div>
+          </div>
+          <div class="text-gray-800 font-semibold py-2 text-lg md:text-xl text-center group-hover:bg-red-600 group-hover:text-white">Gasket</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group">
+          <div class="relative h-40 md:h-64 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/products/type-joint-carburetors.webp" class="h-56 group-hover:scale-110 transition ease-in-out"/>
+            <div class="absolute inset-0 bg-slate-900 opacity-50 scale-0 group-hover:scale-100 transition ease-in-out"></div>
+          </div>
+          <div class="text-gray-800 font-semibold py-2 text-lg md:text-xl text-center group-hover:bg-red-600 group-hover:text-white">Joint Carburetor</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group">
+          <div class="relative h-40 md:h-64 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/products/type-oil-level-gauge.webp" class="h-56 group-hover:scale-110 transition ease-in-out"/>
+            <div class="absolute inset-0 bg-slate-900 opacity-50 scale-0 group-hover:scale-100 transition ease-in-out"></div>
+          </div>
+          <div class="text-gray-800 font-semibold py-2 text-lg md:text-xl text-center group-hover:bg-red-600 group-hover:text-white">Oil Level Gauge</div>
+        </a>
       </div>
     </section>
     <!-- End:Content -->
@@ -308,7 +378,7 @@
     <!-- End:Footer -->
     <div class="md:hidden fixed bottom-0 w-full flex justify-around items-center bg-white py-2 border-t border-slate-400">
       <a href="index.html" class="text-xl bi bi-house-door-fill text-red-500"></a>
-      <a href="company-profile.html" class="text-xl bi bi-buildings text-slate-700"></a>
+      <a href="company_group.html" class="text-xl bi bi-buildings text-slate-700"></a>
       <a href="products.html" class="text-xl bi bi-archive text-slate-700"></a>
       <a href="career.html" class="text-xl bi bi-person-plus text-slate-700"></a>
       <a href="contact-us.html" class="text-xl bi bi-telephone text-slate-700"></a>
