@@ -9,31 +9,23 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>HTA Indonesia Group | HTA Indonesia</title>
+    <title>HTA Indonesia Group | HTA Facility</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo/logo-hta.svg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" /> -->
-       <style type="text/tailwindcss">
+    <style type="text/tailwindcss">
         @layer utilities {
           .content-auto {
             content-visibility: auto;
           }
-        }
-        .swiper-pagination-bullet-active {
-            background-color: rgb(220, 38, 38);
-        }
-        
-        .thumbSwiper .swiper-slide-thumb-active {
-          filter:brightness(1);
-        }
+        }   
       </style>
   </head>
 
   <body id="body">
-    <!-- Start:Navbar -->
     <nav class="fixed top-0 w-full bg-white z-50 shadow-xl py-1 md:py-0" data-aos="zoom-out">
       <div class="flex flex-wrap items-center justify-between px-2 md:px-0 container mx-auto">
         <a href="index.html" class="flex items-center">
@@ -238,7 +230,13 @@
           <li>
             <div class="flex items-center">
               <span class="bi bi-chevron-right"></span>
-              <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">PT. High Tech Anchillaries Indoneisa</span>
+              <a href="hta_overview.html" class="ml-1 md:ml-2 text-sm font-medium text-gray-800 hover:text-red-600 dark:text-gray-400 dark:hover:text-white">PT. High Tech Anchillaries Indoneisa</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <span class="bi bi-chevron-right"></span>
+              <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Facility</span>
             </div>
           </li>
         </ol>
@@ -247,74 +245,58 @@
 
       <!-- Start:Header -->
       <div class="flex flex-col" data-aos="fade-up">
-        <div class="text-xl md:text-3xl w-fit mb-1 md:mb-2 text-gray-900">PT. High Tech Anchillaries Indonesia</div>
+        <div class="text-xl md:text-3xl w-fit mb-1 md:mb-2 text-slate-900">PT. High Tech Anchillaries Indonesia</div>
         <div class="border border-b-2 border-red-600 w-10 md:w-20 mb-3 md:mb-5"></div>
       </div>
       <!-- End:Header -->
 
       <!-- Start:Tab Menu -->
       <div class="flex flex-wrap text-gray-900 text-base md:text-lg divide-x divide-slate-300 w-full items-center mb-5" data-aos="fade-up">
-        <a href="hta_overview.html" class="pr-4 md:pr-6 hover:text-red-600 font-semibold text-red-600">Company Profile</a>
+        <a href="hta_overview.html" class="pr-4 md:pr-6 hover:text-red-600">Company Profile</a>
         <a href="hta-products.html" class="px-4 md:px-6 hover:text-red-600">Products</a>
-        <a href="hta-facility.html" class="px-4 md:px-6 hover:text-red-600">Facility</a>
+        <a href="hta-facility.html" class="px-4 md:px-6 font-semibold text-red-600">Facility</a>
         <a href="hta-certifications.html" class="px-4 md:px-6 hover:text-red-600">Certifications</a>
         <a href="hta-contact.html" class="px-4 md:px-6 hover:text-red-600">Contact Information</a>
       </div>
       <!-- End:Tab Menu -->
 
-      <div class="flex flex-col" data-aos="fade-up">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
-          <div class="col-span-1">
-            <div class="swiper companySwiper mb-5">
-              <div class="swiper-wrapper w-full">
-                <img src="/assets/illustrations/illustration-overview-ars.jpg" class="swiper-slide w-full max-h-96 object-cover"/>
-                <img src="/assets/illustrations/illustration-overview-hta.jpg" class="swiper-slide w-full max-h-96 object-cover"/>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            
-            <h1 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">Technology</h1>
-            <p class="text-gray-500 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p class="text-gray-500 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <a href="products-detail.html" class="flex flex-col group border hover:shadow-2xl">
+          <div class="relative h-40 md:h-56 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/facility/facility-molding.jpg" class="h-full w-full object-cover group-hover:scale-125 duration-500 transition ease-in-out"/>
           </div>
-          <div class="col-span-1">
-            <p class="text-gray-500 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p class="text-gray-500 mb-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <h1 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">Company Overview</h1>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">Company Name :</div>
-              <div class="text-red-600 font-semibold">PT. High Tech Anchillaries Indonesia</div>
-            </div>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">Date of establishment :</div>
-              <div class="text-gray-700 font-semibold">August 16, 1989</div>
-            </div>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">Capital :</div>
-              <div class="text-gray-700 font-semibold">100 milion yen</div>
-            </div>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">President :</div>
-              <div class="text-gray-700 font-semibold">Peter </div>
-            </div>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">Head Office :</div>
-              <div class="text-gray-700 font-semibold">Jl. Manis II No. 2 Zona Industri Manis Tangerang - Indonesia </div>
-            </div>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">Number of Employees :</div>
-              <div class="text-gray-700 font-semibold">546 Employees (as of february, 2023)</div>
-            </div>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">Main Business :</div>
-              <div class="text-gray-700 font-semibold">Development, manufacture and sale of rubber seal parts for transport equipment and OA device parts</div>
-            </div>
-            <div class="flex flex-col mb-2">
-              <div class="text-sm text-gray-500">Licensed Factory :</div>
-              <div class="text-gray-700 font-semibold">Arai Saishakusho Co. Ltd.</div>
-            </div>
+          <div class="font-semibold py-2 text-lg md:text-xl text-center bg-red-600 text-white">Molding</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group border hover:shadow-2xl">
+          <div class="relative h-40 md:h-56 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/facility/facility-compound.png" class="h-full w-full object-cover group-hover:scale-125 duration-500 transition ease-in-out"/>
           </div>
-        </div>
+          <div class="font-semibold py-2 text-lg md:text-xl text-center bg-red-600 text-white">Compound</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group border hover:shadow-2xl">
+          <div class="relative h-40 md:h-56 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/facility/facility-metal-threatment.webp" class="h-full w-full object-cover group-hover:scale-125 duration-500 transition ease-in-out"/>
+          </div>
+          <div class="font-semibold py-2 text-lg md:text-xl text-center bg-red-600 text-white">Metal Threatment</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group border hover:shadow-2xl">
+          <div class="relative h-40 md:h-56 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/facility/facility-quality.jpg" class="h-full w-full object-cover group-hover:scale-125 duration-500 transition ease-in-out"/>
+          </div>
+          <div class="font-semibold py-2 text-lg md:text-xl text-center bg-red-600 text-white">Product Quality Management</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group border hover:shadow-2xl">
+          <div class="relative h-40 md:h-56 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/facility/facility-trimming.webp" class="h-full w-full object-cover group-hover:scale-125 duration-500 transition ease-in-out"/>
+          </div>
+          <div class="font-semibold py-2 text-lg md:text-xl text-center bg-red-600 text-white">Trimming,Deflashing & Finishing</div>
+        </a>
+        <a href="products-detail.html" class="flex flex-col group border hover:shadow-2xl">
+          <div class="relative h-40 md:h-56 w-full overflow-hidden flex justify-center items-center">
+            <img src="/assets/facility/facility-spring.jpg" class="h-full w-full object-cover group-hover:scale-125 duration-500 transition ease-in-out"/>
+          </div>
+          <div class="font-semibold py-2 text-lg md:text-xl text-center bg-red-600 text-white">Spring Manufacturing</div>
+        </a>
       </div>
     </section>
     <!-- End:Content -->
@@ -436,18 +418,6 @@
           $('#menuDropdown').toggleClass('hidden')
           $('.dropdownChevron').toggleClass('rotate-180')
         });
-      });
-
-      //Swiper
-      var swiper = new Swiper(".companySwiper", {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
       });
 
       //Scrollbar
