@@ -267,12 +267,15 @@
 
       <div class="text-lg text-slate-800 font-semibold border-l-4 border-red-600 mb-3 md:mb-5" data-aos="fade-up"><span class="ml-2">Certifications</span></div>
       <div class="flex w-full md:w-1/2 mb-3 md:mb-6" data-aos="fade-up">
-        <div class="py-2 bg-red-600 text-white grow text-center hover:bg-red-600 hover:text-white cursor-pointer">ISO 9000:2022</div>
-        <div class="py-2 bg-white border border-slate-300 grow text-center text-gray-600 hover:bg-red-600 hover:text-white cursor-pointer">ISO 14000:2019</div>
-        <div class="py-2 bg-white border border-slate-300 grow text-center text-gray-600 hover:bg-red-600 hover:text-white cursor-pointer">IATF:16949</div>
+        <div class="py-2 bg-white border border-slate-300 grow text-center text-gray-600 hover:bg-red-600 hover:text-white cursor-pointer" id="btnISO9001">ISO 9001:2015</div>
+        <div class="py-2 bg-white border border-slate-300 grow text-center text-gray-600 hover:bg-red-600 hover:text-white cursor-pointer" id="btnISO14001">ISO 14001:2015</div>
+        <div class="py-2 bg-white border border-slate-300 grow text-center text-gray-600 hover:bg-red-600 hover:text-white cursor-pointer" id="btnIATF">IATF:16949</div>
       </div>
-      <div class="flex w-full" data-aos="fade-up">
-        <img src="assets/certificates/Sertifikat-ISO-9001-2015.jpg" alt="" class="border border-red-500">
+      <div class="flex flex-col w-full gap-3 md:gap-5" data-aos="fade-up">
+        <img src="assets/certificates/Certificate-ISO-9001-(KAN).webp" alt="" class="cerISO9001 border border-red-500 w-full md:w-3/4">
+        <img src="assets/certificates/Certificate-ISO-9001-(UKAS).webp" alt="" class="cerISO9001 border border-red-500 w-full md:w-3/4">
+        <img src="assets/certificates/Certificate-ISO-14001.webp" alt="" class="cerISO14001 hidden border border-red-500 w-full md:w-3/4">
+        <img src="assets/certificates/Certificate-IATF-16949-1.webp" alt="" class="cerIATF hidden border border-red-500 w-full md:w-3/4">
       </div>
     </section>
     <!-- End:Content -->
@@ -394,6 +397,23 @@
           $('#menuDropdown').toggleClass('hidden')
           $('.dropdownChevron').toggleClass('rotate-180')
         });
+
+        //Hide Show Certificate
+        $('#btnISO9001').click(function(e){
+          e.preventDefault();
+          $('#btnISO9001').addClass('.bg-red-600,.text-white');
+          $('#btnISO14001,#btnIATF').removeClass('.bg-red-600,.text-white');
+          $('.cerISO9001').show();
+          $('.cerISO14001,.cerIATF').hide();
+        })
+
+        $('#btnISO14001').click(function(e){
+          e.preventDefault();
+          $('#btnISO14001').addClass('.bg-red-600');
+          $('#btnISO9001,#btnIATF').removeClass('.bg-red-600,.text-white');
+          $('.cerISO14001').show();
+          $('.cerISO9001,.cerIATF').hide();
+        })
       });
 
       //Scrollbar
